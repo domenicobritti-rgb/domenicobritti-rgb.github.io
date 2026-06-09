@@ -1,0 +1,1 @@
+Aggiunto il review article open access su Toxicology Letters: Permethrin in companion animals: mechanistic neurotoxicity, dermal pharmacokinetics, and secondary exposure pathways. DOI: 10.1016/j.toxlet.2026.111928.
