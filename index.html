@@ -408,6 +408,37 @@
 
 
 
+
+    .material-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 64px 1fr auto;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .material-card p {
+      color: var(--text);
+      margin-top: 10px;
+    }
+
+    .material-meta {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 760px) {
+      .material-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .publication a {
       color: var(--ink);
       text-decoration: none;
@@ -629,6 +660,7 @@
         <a href="#didattica">Didattica</a>
         <a href="#pubblicazioni">Pubblicazioni</a>
         <a href="#articoli">Articoli</a>
+        <a href="#materiali">Materiali</a>
         <a href="#progetti">Progetti</a>
         <a href="#contatti">Contatti</a>
         <span class="language-switch"><a class="active" href="index.html">IT</a><a href="en.html">EN</a></span>
@@ -941,6 +973,21 @@
           <a class="article-read" href="articoli/pfas-sicurezza-regolatoria.html">Leggi l’articolo →</a>
         </article>
       </div>
+    </section>
+
+    <section id="materiali" class="section">
+      <p class="eyebrow">Presentazioni e materiali</p>
+      <h2>Materiali divulgativo-scientifici</h2>
+      <article class="material-card">
+        <div class="iconbox" aria-hidden="true">PDF</div>
+        <div>
+          <h3>Podolica: simbolo e anima di questa terra</h3>
+          <p><strong>Presentazione divulgativo-scientifica.</strong></p>
+          <p>Una lettura culturale, zootecnica e territoriale della Podolica calabro-lucana, tra archeologia, Magna Grecia, transumanza, benessere animale, biodiversità e identità delle aree interne.</p>
+          <div class="material-meta">Prof. Domenico Britti · PDF · 2026</div>
+        </div>
+        <a href="docs/podolica-simbolo-anima-terra-britti-2026.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Apri il PDF</a>
+      </article>
     </section>
 
     <section id="progetti" class="section">

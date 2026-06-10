@@ -408,6 +408,37 @@
 
 
 
+
+    .material-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 64px 1fr auto;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .material-card p {
+      color: var(--text);
+      margin-top: 10px;
+    }
+
+    .material-meta {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 760px) {
+      .material-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .publication a {
       color: var(--ink);
       text-decoration: none;
@@ -629,6 +660,7 @@
         <a href="#didattica">Teaching</a>
         <a href="#pubblicazioni">Publications</a>
         <a href="#articoli">Articles</a>
+        <a href="#materiali">Materials</a>
         <a href="#progetti">Projects</a>
         <a href="#contatti">Contact</a>
         <span class="language-switch"><a href="index.html">IT</a><a class="active" href="en.html">EN</a></span>
@@ -941,6 +973,21 @@
           <a class="article-read" href="en/articles/pfas-regulatory-safety.html">Read the article →</a>
         </article>
       </div>
+    </section>
+
+    <section id="materiali" class="section">
+      <p class="eyebrow">Presentations and materials</p>
+      <h2>Popular-science materials</h2>
+      <article class="material-card">
+        <div class="iconbox" aria-hidden="true">PDF</div>
+        <div>
+          <h3>Podolica: symbol and soul of this land</h3>
+          <p><strong>Popular-science presentation.</strong></p>
+          <p>A cultural, zootechnical and territorial reading of the Calabro-Lucanian Podolica cattle, across archaeology, Magna Graecia, transhumance, animal welfare, biodiversity and the identity of inland areas.</p>
+          <div class="material-meta">Prof. Domenico Britti · PDF · 2026</div>
+        </div>
+        <a href="docs/podolica-simbolo-anima-terra-britti-2026.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Open PDF</a>
+      </article>
     </section>
 
     <section id="progetti" class="section">
