@@ -444,6 +444,52 @@
       }
     }
 
+
+    .material-preview {
+      display: block;
+      width: 100%;
+      max-width: 180px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+      background: white;
+    }
+
+    .material-card.with-preview {
+      grid-template-columns: 180px 1fr auto;
+    }
+
+    @media (max-width: 900px) {
+      .material-card.with-preview {
+        grid-template-columns: 150px 1fr;
+      }
+
+      .material-card.with-preview .btn {
+        grid-column: 2;
+        width: fit-content;
+      }
+
+      .material-preview {
+        max-width: 150px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .material-card.with-preview {
+        grid-template-columns: 1fr;
+      }
+
+      .material-card.with-preview .btn {
+        grid-column: auto;
+      }
+
+      .material-preview {
+        max-width: 100%;
+      }
+    }
+
     .publication a {
       color: var(--ink);
       text-decoration: none;
@@ -984,8 +1030,8 @@
       <p class="eyebrow">Presentations and materials</p>
       <h2>Popular-science materials</h2>
       <div class="material-list">
-      <article class="material-card">
-        <div class="iconbox" aria-hidden="true">PDF</div>
+      <article class="material-card with-preview">
+        <img class="material-preview" src="assets/previews/preview-cane-slitta.png" alt="Preview of the presentation Sled dogs and Arctic contaminants" loading="lazy">
         <div>
           <h3>Sled dogs and Arctic contaminants: a One Health sentinel model</h3>
           <p><strong>Popular-science presentation.</strong></p>
@@ -994,8 +1040,8 @@
         </div>
         <a href="docs/cane-slitta-contaminanti-artici-one-health-britti-2026.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Open PDF</a>
       </article>
-      <article class="material-card">
-        <div class="iconbox" aria-hidden="true">PDF</div>
+      <article class="material-card with-preview">
+        <img class="material-preview" src="assets/previews/preview-podolica.png" alt="Preview of the presentation Podolica: symbol and soul of this land" loading="lazy">
         <div>
           <h3>Podolica: symbol and soul of this land</h3>
           <p><strong>Popular-science presentation.</strong></p>
