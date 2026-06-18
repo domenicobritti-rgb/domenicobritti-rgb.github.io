@@ -790,6 +790,50 @@
       .hero-seal { width: 100px; height: 100px; }
     }
 
+  
+    /* Hero optical alignment fix: logo, badge, title and text share the same left axis */
+    .hero,
+    .hero .container,
+    .hero-grid,
+    .hero-content,
+    .hero-copy {
+      text-align: left;
+    }
+
+    .hero-seal {
+      display: block;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-bottom: 18px;
+    }
+
+    .hero .badge,
+    .hero-badge,
+    .scientific-badge {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: fit-content;
+    }
+
+    .hero h1,
+    .hero p {
+      text-align: left;
+    }
+
+    @media (max-width: 760px) {
+      .hero-seal {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+
+      .hero .badge,
+      .hero-badge,
+      .scientific-badge {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+
   </style>
 
   <link rel="canonical" href="https://domenicobritti-rgb.github.io/">
