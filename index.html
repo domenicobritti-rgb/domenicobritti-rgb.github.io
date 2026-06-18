@@ -701,6 +701,95 @@
       }
     }
 
+  
+
+    /* Clean logo/header layout */
+    .site-header .nav {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .site-header .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 300px;
+      text-decoration: none;
+      color: var(--ink);
+      letter-spacing: normal;
+      font-weight: 800;
+      flex: 0 0 auto;
+    }
+
+    .site-header .brand-logo {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      display: block;
+      flex: 0 0 46px;
+    }
+
+    .site-header .brand-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.08;
+    }
+
+    .site-header .brand-text strong {
+      font-size: 16px;
+      color: var(--slate);
+      white-space: nowrap;
+    }
+
+    .site-header .brand-text span {
+      margin-top: 3px;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .site-header .nav-links {
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+
+    .hero-seal {
+      width: 122px;
+      height: 122px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 16px auto;
+      opacity: 0.98;
+    }
+
+    .hero .pill {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 980px) {
+      .site-header .brand { min-width: auto; }
+      .site-header .brand-text span { display: none; }
+      .site-header .brand-text strong { font-size: 15px; }
+    }
+
+    @media (max-width: 860px) {
+      .site-header .nav { height: 66px; align-items: center; }
+      .site-header .nav-links { display: none; }
+      .site-header .brand-logo { width: 42px; height: 42px; flex-basis: 42px; }
+    }
+
+    @media (max-width: 520px) {
+      .site-header .brand-text strong { font-size: 14px; }
+      .hero-seal { width: 100px; height: 100px; }
+    }
+
   </style>
 
   <link rel="canonical" href="https://domenicobritti-rgb.github.io/">
@@ -742,6 +831,7 @@
 }
 </script>
 
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -749,6 +839,10 @@
     <nav class="nav" aria-label="Navigazione principale">
       <a class="brand" href="#home" aria-label="Prof. Domenico Britti">
         <img class="brand-logo" src="assets/img/db-logo-life-sciences-one-health-veterinary-medicine.png" alt="Logo Prof. Domenico Britti">
+        <span class="brand-text">
+          <strong>Prof. Domenico Britti</strong>
+          <span>Life Sciences · One Health · Veterinary Medicine</span>
+        </span>
       </a>
       <div class="nav-links">
         <a href="#profilo">Profilo</a>
@@ -768,7 +862,7 @@
     <section id="home" class="hero">
       <div class="hero-inner">
         <div>
-                    <img class="hero-seal" src="assets/img/db-logo-life-sciences-one-health-veterinary-medicine.png" alt="Logo Prof. Domenico Britti">
+          <img class="hero-seal" src="assets/img/db-logo-life-sciences-one-health-veterinary-medicine.png" alt="Logo Prof. Domenico Britti">
 <p class="pill"><span aria-hidden="true">🌿</span> Life Sciences · One Health · Veterinary Medicine</p>
           <h1>Prof. Domenico Britti</h1>
           <p class="hero-text">
