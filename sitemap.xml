@@ -66,4 +66,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://domenicobritti-rgb.github.io/docs/unseen-footprints-modern-pesticides-britti-2026.pdf</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
