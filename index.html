@@ -662,54 +662,37 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
       text-decoration: none;
       color: inherit;
-    }
-
-    .brand-logo {
-      width: 48px;
-      height: 48px;
-      object-fit: contain;
-      display: block;
       flex: 0 0 auto;
     }
 
-    .brand-title {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-    }
-
-    .brand-title strong {
-      font-size: 16px;
-      letter-spacing: -0.01em;
-      color: var(--text);
-    }
-
-    .brand-title span {
-      margin-top: 3px;
-      font-size: 12px;
-      color: var(--muted);
-      font-weight: 700;
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      display: block;
     }
 
     .hero-seal {
-      width: 118px;
-      height: 118px;
+      width: 122px;
+      height: 122px;
       object-fit: contain;
-      margin-bottom: 18px;
-      opacity: 0.96;
+      display: block;
+      margin: 0 auto 16px auto;
+      opacity: 0.98;
+    }
+
+    .hero .pill {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media (max-width: 760px) {
       .brand-logo {
-        width: 42px;
-        height: 42px;
-      }
-
-      .brand-title span {
-        display: none;
+        width: 38px;
+        height: 38px;
       }
 
       .hero-seal {
@@ -730,7 +713,7 @@
   "@type": "Person",
   "name": "Domenico Britti",
   "honorificPrefix": "Prof.",
-  "jobTitle": "Full Professor of Life Sciences, One Health, Veterinary Medicine",
+  "jobTitle": "Full Professor of Veterinary Pharmacology and Toxicology",
   "affiliation": {
     "@type": "CollegeOrUniversity",
     "name": "University Magna Graecia of Catanzaro",
@@ -759,20 +742,14 @@
 }
 </script>
 
-  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Navigazione principale">
-      <a class="brand" href="#top" aria-label="Prof. Domenico Britti">
+      <a class="brand" href="#home" aria-label="Prof. Domenico Britti">
         <img class="brand-logo" src="assets/img/db-logo-life-sciences-one-health-veterinary-medicine.png" alt="Logo Prof. Domenico Britti">
-        <span class="brand-title">
-          <strong>Prof. Domenico Britti</strong>
-          <span>Life Sciences · One Health · Veterinary Medicine</span>
-        </span>
       </a>
-      <a href="#home" class="brand">Domenico Britti</a>
       <div class="nav-links">
         <a href="#profilo">Profilo</a>
         <a href="#ricerca">Ricerca</a>
@@ -791,10 +768,11 @@
     <section id="home" class="hero">
       <div class="hero-inner">
         <div>
-          <p class="pill"><span aria-hidden="true">🌿</span> Life Sciences · One Health · Veterinary Medicine</p>
+                    <img class="hero-seal" src="assets/img/db-logo-life-sciences-one-health-veterinary-medicine.png" alt="Logo Prof. Domenico Britti">
+<p class="pill"><span aria-hidden="true">🌿</span> Life Sciences · One Health · Veterinary Medicine</p>
           <h1>Prof. Domenico Britti</h1>
           <p class="hero-text">
-            Professore ordinario di Life Sciences, One Health, Veterinary Medicine presso l’Università “Magna Graecia” di Catanzaro. La mia attività scientifica integra farmacologia veterinaria, tossicologia ambientale, sicurezza dei medicinali, benessere animale e approccio One Health.
+            Professore ordinario di Farmacologia e tossicologia veterinaria presso l’Università “Magna Graecia” di Catanzaro. La mia attività scientifica integra farmacologia veterinaria, tossicologia ambientale, sicurezza dei medicinali, benessere animale e approccio One Health.
           </p>
           <div class="actions">
             <a href="#ricerca" class="btn btn-primary">Esplora il mio lavoro <span aria-hidden="true">→</span></a>
