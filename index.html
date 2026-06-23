@@ -953,6 +953,51 @@
       }
     }
 
+  
+    .new-badge {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #047857;
+      border: 1px solid rgba(5, 150, 105, 0.24);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      animation: newBadgePulse 1.8s ease-in-out infinite;
+      vertical-align: middle;
+    }
+
+    .publication-date {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    @keyframes newBadgePulse {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.20);
+      }
+      50% {
+        opacity: 0.68;
+        transform: scale(1.04);
+        box-shadow: 0 0 0 6px rgba(5, 150, 105, 0.06);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .new-badge {
+        animation: none;
+      }
+    }
+
   </style>
 
   <link rel="canonical" href="https://domenicobritti-rgb.github.io/">
@@ -1306,7 +1351,8 @@
       <div class="article-list">
         <article class="article-card">
           <div>
-            <span class="article-meta">Saggio storico-documentario · PDF</span>
+            <span class="article-meta">Saggio storico-documentario · PDF <span class="new-badge" data-new-until="2026-07-23">NEW</span></span>
+            <span class="publication-date">Pubblicato il 23 giugno 2026</span>
             <h3>L’ombra thurino-brettia nella genealogia degli <em>Octavii</em></h3>
             <p>Nota storico-documentaria sulle origini paterne di Augusto. Il contributo riconsidera il <em>cognomen</em> infantile <em>Thurinus</em>, l’invettiva di Marco Antonio sul <em>pagus Thurinus</em> e il contesto post-annibalico del territorio thurino-bruzio.</p>
           </div>
@@ -1451,5 +1497,17 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5dd8b5d1ebad419e9c278f29a8419540"}'></script><!-- End Cloudflare Web Analytics -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('[data-new-until]').forEach(function (el) {
+        var until = new Date(el.getAttribute('data-new-until') + 'T23:59:59');
+        if (new Date() > until) {
+          el.remove();
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
