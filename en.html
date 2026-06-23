@@ -887,6 +887,35 @@
       }
     }
 
+  
+    .language-switch a:not(.license-chip) {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      min-width: 28px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .lang-code {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .lang-flag {
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    @media (max-width: 760px) {
+      .lang-flag {
+        display: none;
+      }
+    }
+
   </style>
 
   <link rel="canonical" href="https://domenicobritti-rgb.github.io/en.html">
@@ -951,8 +980,8 @@
         <a href="#materiali">Materials</a>
         <a href="#progetti">Projects</a>
         <a href="#contatti">Contact</a>
-        <span class="language-switch"><a href="index.html">IT</a><a class="license-chip" href="license.html" title="Licenza Creative Commons">© CC BY-NC-ND 4.0</a>
-        <a class="active" href="en.html">EN</a></span>
+        <span class="language-switch"><a href="index.html"><span class="lang-code">IT</span><span class="lang-flag" aria-hidden="true">🇮🇹</span></a><a class="license-chip" href="license.html" title="Licenza Creative Commons">© CC BY-NC-ND 4.0</a>
+        <a class="active" href="en.html"><span class="lang-code">EN</span><span class="lang-flag" aria-hidden="true">🇬🇧</span></a></span>
       </div>
     </nav>
   </header>
