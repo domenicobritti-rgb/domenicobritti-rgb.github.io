@@ -998,6 +998,92 @@
       }
     }
 
+  
+    /* Desktop side index and hero typographic refinement */
+    .side-index {
+      display: none;
+    }
+
+    @media (min-width: 1280px) {
+      .side-index {
+        display: block;
+        position: fixed;
+        left: 18px;
+        top: 108px;
+        width: 218px;
+        max-height: calc(100vh - 132px);
+        overflow: auto;
+        padding: 16px 14px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        z-index: 30;
+      }
+
+      .side-index-title {
+        margin: 0 0 10px;
+        color: var(--brand);
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .side-index nav {
+        display: grid;
+        gap: 4px;
+      }
+
+      .side-index a {
+        display: block;
+        padding: 6px 8px;
+        border-radius: 10px;
+        color: var(--text);
+        font-size: 13px;
+        font-weight: 750;
+        line-height: 1.2;
+        text-decoration: none;
+      }
+
+      .side-index a:hover {
+        background: var(--soft);
+        color: var(--brand);
+      }
+
+      .side-index .sub {
+        padding-left: 16px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6.4vw, 78px) !important;
+      line-height: 0.98 !important;
+      letter-spacing: -0.055em !important;
+    }
+
+    .hero p,
+    .hero .lead {
+      font-size: clamp(19px, 2vw, 27px) !important;
+      line-height: 1.38 !important;
+    }
+
+    @media (max-width: 760px) {
+      .hero h1 {
+        font-size: clamp(40px, 13vw, 58px) !important;
+      }
+
+      .hero p,
+      .hero .lead {
+        font-size: 20px !important;
+        line-height: 1.42 !important;
+      }
+    }
+
   </style>
 
   <link rel="canonical" href="https://domenicobritti-rgb.github.io/">
@@ -1067,6 +1153,28 @@
       </div>
     </nav>
   </header>
+  <aside class="side-index" aria-label="Indice sintetico">
+    <p class="side-index-title">Indice</p>
+    <nav>
+      <a href="#profilo">Profilo</a>
+      <a class="sub" href="#profilo">Ruolo accademico</a>
+      <a class="sub" href="#profilo">Visione One Health</a>
+      <a href="#ricerca">Ricerca</a>
+      <a class="sub" href="#ricerca">Pesticidi e contaminanti</a>
+      <a class="sub" href="#ricerca">Scienza regolatoria</a>
+      <a href="#didattica">Didattica</a>
+      <a href="#pubblicazioni">Pubblicazioni</a>
+      <a class="sub" href="#pubblicazioni">Primo autore</a>
+      <a class="sub" href="#pubblicazioni">Ultimo autore</a>
+      <a href="#articoli">Articoli e commenti</a>
+      <a class="sub" href="#articoli">Saggi storico-documentari</a>
+      <a href="#materiali">Materiali</a>
+      <a class="sub" href="#materiali">Presentazioni PDF</a>
+      <a href="#progetti">Progetti</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </aside>
+
 
   <main>
     <section id="home" class="hero">
