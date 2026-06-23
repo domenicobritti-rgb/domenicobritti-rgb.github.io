@@ -916,6 +916,43 @@
       }
     }
 
+  
+    .language-switch a:not(.license-chip) {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      min-width: 28px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .lang-code {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .lang-flag-img {
+      display: block;
+      width: 18px;
+      height: 12px;
+      object-fit: cover;
+      border-radius: 2px;
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.18);
+    }
+
+    .lang-flag {
+      display: none !important;
+    }
+
+    @media (max-width: 760px) {
+      .lang-flag-img {
+        display: none;
+      }
+    }
+
   </style>
 
   <link rel="canonical" href="https://domenicobritti-rgb.github.io/">
@@ -980,8 +1017,8 @@
         <a href="#materiali">Materiali</a>
         <a href="#progetti">Progetti</a>
         <a href="#contatti">Contatti</a>
-        <span class="language-switch"><a class="active" href="index.html"><span class="lang-code">IT</span><span class="lang-flag" aria-hidden="true">🇮🇹</span></a><a class="license-chip" href="licenza.html" title="Licenza Creative Commons">© CC BY-NC-ND 4.0</a>
-        <a href="en.html"><span class="lang-code">EN</span><span class="lang-flag" aria-hidden="true">🇬🇧</span></a></span>
+        <span class="language-switch"><a class="active" href="index.html"><span class="lang-code">IT</span><img class="lang-flag-img" src="assets/img/flag-it.svg" alt="Italiano"></a><a class="license-chip" href="licenza.html" title="Licenza Creative Commons">© CC BY-NC-ND 4.0</a>
+        <a href="en.html"><span class="lang-code">EN</span><img class="lang-flag-img" src="assets/img/flag-gb.svg" alt="English"></a></span>
       </div>
     </nav>
   </header>
@@ -999,7 +1036,7 @@
           <div class="actions">
             <a href="#ricerca" class="btn btn-primary">Esplora il mio lavoro <span aria-hidden="true">→</span></a>
             <a href="#contatti" class="btn btn-secondary">Contatti <span aria-hidden="true">✉</span></a>
-            <a href="en.html" class="btn btn-secondary">English version</a>
+            <a href="en.html"><span class="lang-code">EN</span><img class="lang-flag-img" src="assets/img/flag-gb.svg" alt="English"></a>
           </div>
         </div>
 
