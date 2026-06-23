@@ -84,4 +84,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+  <url>
+    <loc>https://domenicobritti-rgb.github.io/docs/thurian-brettian-shadow-octavii-augustus-britti-2026.pdf</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
