@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use or discuss materials from this website, please cite them as indicated."
+title: "Prof. Domenico Britti - Personal Academic Website"
+authors:
+  - family-names: "Britti"
+    given-names: "Domenico"
+orcid: "https://orcid.org/0000-0001-7355-8791"
+year: 2026
+url: "https://domenicobritti-rgb.github.io/"
+license: "CC-BY-NC-ND-4.0"
+preferred-citation:
+  type: webpage
+  title: "Prof. Domenico Britti - Personal Academic Website"
+  authors:
+    - family-names: "Britti"
+      given-names: "Domenico"
+  year: 2026
+  url: "https://domenicobritti-rgb.github.io/"

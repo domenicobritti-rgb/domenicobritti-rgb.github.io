@@ -834,6 +834,24 @@
       }
     }
 
+  
+    .license-block {
+      margin-top: 32px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .license-block strong { color: var(--text); }
+    .license-block a { color: var(--brand); font-weight: 700; text-decoration: none; }
+    .license-block a:hover { text-decoration: underline; }
+    .license-page { max-width: 920px; margin: 0 auto; padding: 72px 22px; }
+    .license-page h1 { font-size: clamp(38px, 6vw, 70px); line-height: .95; letter-spacing: -0.055em; margin: 18px 0 24px; }
+    .license-page h2 { margin-top: 34px; font-size: 24px; letter-spacing: -0.02em; }
+    .license-page p, .license-page li { color: var(--text); font-size: 18px; line-height: 1.7; }
+    .license-page code { background: var(--soft); padding: 2px 6px; border-radius: 8px; font-size: .92em; }
+
   </style>
 
   <link rel="canonical" href="https://domenicobritti-rgb.github.io/">
@@ -876,6 +894,7 @@
 </script>
 
   <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="rights" content="© Prof. Domenico Britti, 2026. Original materials licensed under CC BY-NC-ND 4.0 unless otherwise stated.">
 </head>
 
 <body>
@@ -1310,7 +1329,13 @@
       <p>© <span id="year"></span> Prof. Domenico Britti. Tutti i diritti riservati.</p>
       <p>Life Sciences, One Health, Veterinary Medicine · One Health</p>
     </div>
-  </footer>
+  
+      <div class="license-block">
+        <p><strong>Licenza.</strong> © 2026 Prof. Domenico Britti. Testi, presentazioni, immagini originali e materiali didattico-scientifici pubblicati su questo sito sono rilasciati con licenza <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a> (CC BY-NC-ND 4.0), salvo diversa indicazione.</p>
+        <p>È consentita la condivisione non commerciale dei materiali, con attribuzione all’autore, senza modifiche e con indicazione della fonte originale. Ogni uso commerciale, adattamento, traduzione, rielaborazione o incorporazione in opere derivate richiede autorizzazione scritta dell’autore. <a href="licenza.html">Licenza e modalità di citazione</a>.</p>
+      </div>
+
+    </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
