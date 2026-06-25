@@ -1084,6 +1084,21 @@
       }
     }
 
+  
+    /* Final alignment fixes */
+    .license-chip { display:inline-flex; align-items:center; gap:6px; padding:7px 10px; border:1px solid var(--line); border-radius:999px; color:var(--brand); background:rgba(236,253,245,.72); font-size:12px; font-weight:800; text-decoration:none; white-space:nowrap; }
+    .license-chip:hover { text-decoration:none; background:rgba(209,250,229,.95); border-color:rgba(5,150,105,.35); }
+    .language-switch a:not(.license-chip){display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:28px;line-height:1;text-align:center;}
+    .lang-code{font-size:14px;font-weight:900;line-height:1;}
+    .lang-flag-img{display:block;width:18px;height:12px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(15,23,42,.18);}
+    .new-badge{display:inline-flex;align-items:center;margin-left:8px;padding:3px 8px;border-radius:999px;background:#dcfce7;color:#047857;border:1px solid rgba(5,150,105,.24);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;animation:newBadgePulse 1.8s ease-in-out infinite;vertical-align:middle;}
+    .publication-date{display:block;margin-top:8px;color:var(--muted);font-size:14px;font-weight:700;}
+    @keyframes newBadgePulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(5,150,105,.2);}50%{opacity:.68;transform:scale(1.04);box-shadow:0 0 0 6px rgba(5,150,105,.06);}}
+    @media (prefers-reduced-motion: reduce){.new-badge{animation:none;}}
+    .side-index{display:none;}
+    @media (min-width:1280px){.side-index{display:block;position:fixed;left:18px;top:108px;width:218px;max-height:calc(100vh - 132px);overflow:auto;padding:16px 14px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);box-shadow:0 10px 30px rgba(15,23,42,.08);z-index:30}.side-index-title{margin:0 0 10px;color:var(--brand);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.side-index nav{display:grid;gap:4px}.side-index a{display:block;padding:6px 8px;border-radius:10px;color:var(--text);font-size:13px;font-weight:750;line-height:1.2;text-decoration:none}.side-index a:hover{background:var(--soft);color:var(--brand)}.side-index .sub{padding-left:16px;color:var(--muted);font-size:12px;font-weight:700}}
+    .hero h1{font-size:clamp(42px,6.4vw,78px)!important;line-height:.98!important;letter-spacing:-.055em!important}.hero p,.hero .lead{font-size:clamp(19px,2vw,27px)!important;line-height:1.38!important}@media(max-width:760px){.license-chip{display:none}.lang-flag-img{display:none}.hero h1{font-size:clamp(40px,13vw,58px)!important}.hero p,.hero .lead{font-size:20px!important;line-height:1.42!important}}
+
   </style>
 
   <link rel="canonical" href="https://domenicobritti-rgb.github.io/">
@@ -1148,10 +1163,11 @@
         <a href="#materiali">Materiali</a>
         <a href="#progetti">Progetti</a>
         <a href="#contatti">Contatti</a>
-        <span class="language-switch"><a class="active" href="index.html"><span class="lang-code">IT</span><img class="lang-flag-img" src="assets/img/flag-it.svg" alt="Italiano"></a><a class="license-chip" href="licenza.html" title="Licenza Creative Commons">© CC BY-NC-ND 4.0</a>
-        <a href="en.html"><span class="lang-code">EN</span><img class="lang-flag-img" src="assets/img/flag-gb.svg" alt="English"></a></span>
+        <span class="language-switch"><a class="active" href="index.html"><span class="lang-code">IT</span><img class="lang-flag-img" src="assets/img/flag-it.svg" alt="Italiano"></a>
+<a href="en.html"><span class="lang-code">EN</span><img class="lang-flag-img" src="assets/img/flag-gb.svg" alt="English"></a></span>
       </div>
-    </nav>
+    <a class="license-chip" href="licenza.html" title="Licenza Creative Commons">© CC BY-NC-ND 4.0</a>
+      </nav>
   </header>
   <aside class="side-index" aria-label="Indice sintetico">
     <p class="side-index-title">Indice</p>
