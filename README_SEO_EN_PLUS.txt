@@ -1,0 +1,1 @@
+SEO update: enriched title, meta description, keywords, Open Graph, Twitter Card, schema.org Person JSON-LD, visible Research Interests, richer h2 headings, robots.txt, sitemap.xml and social preview image.
