@@ -1189,6 +1189,31 @@
       .event-preview { height: 230px; }
     }
 
+  
+    /* Header/side-index refinement after adding Third Mission */
+    @media (min-width: 1280px) {
+      .site-header .nav {
+        max-width: none !important;
+        margin: 0 !important;
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        gap: 22px !important;
+      }
+
+      .site-header .brand {
+        flex: 0 0 auto;
+      }
+
+      .site-header .nav-links {
+        margin-left: auto;
+        gap: 18px !important;
+      }
+
+      .site-header .nav-links a.sub {
+        display: none !important;
+      }
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -1277,8 +1302,7 @@
         <a href="#articoli">Articoli</a>
         <a href="#materiali">Materiali</a>
         <a href="#terza-missione">Terza missione</a>
-      <a class="sub" href="#terza-missione">Territorio e biodiversità animale</a>
-      <a href="#progetti">Progetti</a>
+        <a href="#progetti">Progetti</a>
         <a href="#contatti">Contatti</a>
         <span class="language-switch"><a class="active" href="index.html"><span class="lang-code">IT</span><img class="lang-flag-img" src="assets/img/flag-it.svg" alt="Italiano"></a>
 <a href="en.html"><span class="lang-code">EN</span><img class="lang-flag-img" src="assets/img/flag-gb.svg" alt="English"></a></span>
@@ -1303,6 +1327,8 @@
       <a class="sub" href="#articoli">Saggi storico-documentari</a>
       <a href="#materiali">Materiali</a>
       <a class="sub" href="#materiali">Presentazioni PDF</a>
+      <a href="#terza-missione">Terza missione</a>
+      <a class="sub" href="#terza-missione">Territorio e biodiversità animale</a>
       <a href="#progetti">Progetti</a>
       <a href="#contatti">Contatti</a>
     </nav>
