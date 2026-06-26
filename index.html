@@ -1127,6 +1127,68 @@
       line-height: 1.55;
     }
 
+  
+    .event-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .event-card {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: white;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+    }
+
+    .event-preview {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      background: var(--soft);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .event-card-body { padding: 22px; }
+
+    .event-card h3 {
+      margin: 0 0 10px;
+      color: var(--text);
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    .event-meta {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--brand);
+      font-size: 14px;
+      font-weight: 850;
+      line-height: 1.35;
+    }
+
+    .event-card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .event-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 22px 22px;
+    }
+
+    @media (max-width: 860px) {
+      .event-list { grid-template-columns: 1fr; }
+      .event-preview { height: 230px; }
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -1214,7 +1276,9 @@
         <a href="#pubblicazioni">Pubblicazioni</a>
         <a href="#articoli">Articoli</a>
         <a href="#materiali">Materiali</a>
-        <a href="#progetti">Progetti</a>
+        <a href="#terza-missione">Terza missione</a>
+      <a class="sub" href="#terza-missione">Territorio e biodiversità animale</a>
+      <a href="#progetti">Progetti</a>
         <a href="#contatti">Contatti</a>
         <span class="language-switch"><a class="active" href="index.html"><span class="lang-code">IT</span><img class="lang-flag-img" src="assets/img/flag-it.svg" alt="Italiano"></a>
 <a href="en.html"><span class="lang-code">EN</span><img class="lang-flag-img" src="assets/img/flag-gb.svg" alt="English"></a></span>
@@ -1624,6 +1688,41 @@
         </div>
         <a href="docs/podolica-simbolo-anima-terra-britti-2026.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Apri il PDF</a>
       </article>
+      </div>
+    </section>
+
+
+    <section id="terza-missione" class="section">
+      <p class="eyebrow">Terza missione</p>
+      <h2>Terza missione, territorio e biodiversità animale</h2>
+      <p>Partecipazione a iniziative scientifiche, istituzionali e territoriali dedicate alla valorizzazione delle razze autoctone, alla biodiversità animale, alla zootecnia sostenibile, alla transumanza e al ruolo degli animali come patrimonio biologico, culturale e ambientale.</p>
+
+      <div class="event-list">
+        <article class="event-card">
+          <img class="event-preview" src="assets/events/transumanza-calabria-10-luglio-2026-thumb.jpg" alt="Locandina del convegno La Transumanza in Calabria" loading="lazy">
+          <div class="event-card-body">
+            <span class="event-meta">Cittadella Regionale, Germaneto, Catanzaro · 10 luglio 2026</span>
+            <h3>La Transumanza: tra identità culturale, biodiversità e sviluppo sostenibile</h3>
+            <p><strong>Intervento:</strong> Aspetti genetici e importanza della razza per la conservazione del territorio.</p>
+            <p>Tema: transumanza, Podolica, biodiversità, sviluppo sostenibile, identità culturale e zootecnia territoriale.</p>
+          </div>
+          <div class="event-actions">
+            <a class="btn btn-secondary" href="assets/events/transumanza-calabria-10-luglio-2026.jpg" target="_blank" rel="noopener">Apri locandina</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <img class="event-preview" src="assets/events/podolica-crotone-30-maggio-2026-preview.png" alt="Anteprima del programma La valorizzazione della Podolica in Calabria" loading="lazy">
+          <div class="event-card-body">
+            <span class="event-meta">Sala Consiliare del Comune di Crotone · 30 maggio 2026</span>
+            <h3>La valorizzazione della Podolica in Calabria</h3>
+            <p>Iniziativa dedicata alla Podolica calabrese, con interventi accademici, istituzionali e del mondo agricolo.</p>
+            <p>Il programma riporta la partecipazione del Prof. Domenico Britti tra i relatori.</p>
+          </div>
+          <div class="event-actions">
+            <a class="btn btn-secondary" href="docs/events/programma-podolica-crotone-30-maggio-2026.pdf" target="_blank" rel="noopener">Apri programma</a>
+          </div>
+        </article>
       </div>
     </section>
 

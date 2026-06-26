@@ -90,4 +90,14 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://domenicobritti-rgb.github.io/assets/events/transumanza-calabria-10-luglio-2026.jpg</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://domenicobritti-rgb.github.io/docs/events/programma-podolica-crotone-30-maggio-2026.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
 </urlset>
