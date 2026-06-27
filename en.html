@@ -1214,6 +1214,30 @@
       }
     }
 
+  
+    .topic-link {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .topic-link:hover {
+      transform: translateY(-2px);
+      border-color: rgba(16,185,129,.55);
+      background: rgba(16,185,129,.10);
+      text-decoration: none;
+    }
+
+    .topic-link .topic-action {
+      display: block;
+      margin-top: 8px;
+      color: #34d399;
+      font-size: 13px;
+      font-weight: 850;
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -1461,7 +1485,10 @@
           <div class="topic-grid">
             <div class="topic">Veterinary medicines and species-specific differences</div>
             <div class="topic">Comparative pharmacokinetics and pharmacodynamics</div>
-            <div class="topic">Electronic veterinary prescription and traceability</div>
+            <a class="topic topic-link" href="docs/veterinary-digital-prescription-blueprint-britti-2026.pdf" target="_blank" rel="noopener" title="Open the PDF on the Veterinary Electronic Prescription Blueprint">
+              Electronic veterinary prescription and traceability
+              <span class="topic-action">Open teaching material →</span>
+            </a>
             <div class="topic">Prudent use of medicines and supply-chain safety</div>
           </div>
         </div>
@@ -1673,7 +1700,7 @@
       <p class="eyebrow">Presentations and materials</p>
       <h2>Presentations and Scientific Materials</h2>
       <div class="material-list">
-      <article class="material-card with-preview">
+<article class="material-card with-preview">
         <img class="material-preview" src="assets/previews/preview-modern-pesticides.png" alt="Preview of the presentation The unseen footprints of modern pesticides" loading="lazy">
         <div>
           <h3>The unseen footprints of modern pesticides</h3>
