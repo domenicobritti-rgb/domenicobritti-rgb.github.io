@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://domenicobritti-rgb.github.io/</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://domenicobritti-rgb.github.io/en.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://domenicobritti-rgb.github.io/articoli/farmaco-veterinario-one-health.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://domenicobritti-rgb.github.io/en/articles/veterinary-medicines-one-health.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://domenicobritti-rgb.github.io/articoli/pesticidi-animali-sentinella.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://domenicobritti-rgb.github.io/en/articles/pesticides-sentinel-animals.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://domenicobritti-rgb.github.io/articoli/pfas-sicurezza-regolatoria.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://domenicobritti-rgb.github.io/en/articles/pfas-regulatory-safety.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -55,14 +55,14 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://domenicobritti-rgb.github.io/docs/cane-slitta-contaminanti-artici-one-health-britti-2026.pdf</loc>
-    <lastmod>2026-06-11</lastmod>
+    <loc>https://domenicobritti-rgb.github.io/docs/filo-invisibile-animali-sentinella-marocco-britti-2026.pdf</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://domenicobritti-rgb.github.io/docs/filo-invisibile-animali-sentinella-marocco-britti-2026.pdf</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://domenicobritti-rgb.github.io/docs/cane-slitta-contaminanti-artici-one-health-britti-2026.pdf</loc>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -137,7 +137,7 @@
   </url>
   <url>
     <loc>https://domenicobritti-rgb.github.io/docs/des-epigenetic-legacy-sentinel-animals-one-health-britti-2026.pdf</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
