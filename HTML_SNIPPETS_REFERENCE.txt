@@ -1,39 +1,34 @@
-SITE UPDATE: Intertwined Destinies - copyright/license + corrected PBB formula version
+Aggiornamento sito - The Crisco Case
 
-Files included:
+File inclusi nel pacchetto:
 - index.html
 - en.html
-- docs/intertwined-toxic-destinies-historical-toxicology-environmental-mirrors-britti-2026.pdf
-- assets/previews/preview-intertwined-toxic-destinies.png
+- docs/crisco-case-hydrogenation-trans-fats-nutritional-paradigm-britti-2026.pdf
+- assets/previews/preview-crisco-case-trans-fats.png
 
-Italian card inserted/updated in index.html:
+Card italiana inserita in index.html:
 
-<article class="material-card with-preview">
-  <img class="material-preview" src="assets/previews/preview-intertwined-toxic-destinies.png" alt="Anteprima della presentazione Intertwined Destinies" loading="lazy">
-  <div>
-    <h3>Intertwined Destinies: Historical Toxicology and Environmental Mirrors</h3>
-    <p><strong>Materiale didattico-scientifico in lingua inglese.</strong></p>
-    <p>Una lettura One Health di episodi storici di esposizione tossicologica condivisa uomo-animale, dal disastro PBB del Michigan al TOCP in Marocco, dall’esposizione al piombo agli incidenti chimici, con focus su animali sentinella, database clinici veterinari e sorveglianza ambientale.</p>
-    <div class="material-meta">Prof. Domenico Britti · PDF · CC BY-NC-ND 4.0 · Updated August 2026</div>
-  </div>
-  <a href="docs/intertwined-toxic-destinies-historical-toxicology-environmental-mirrors-britti-2026.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Apri il PDF</a>
-</article>
+      <article class="material-card with-preview">
+        <img class="material-preview" src="assets/previews/preview-crisco-case-trans-fats.png" alt="Anteprima della presentazione The Crisco Case" loading="lazy">
+        <div>
+          <h3>The Crisco Case: Hydrogenation, Trans Fats, and the Reversal of a Nutritional Paradigm</h3>
+          <p><strong>Materiale didattico-scientifico in lingua inglese.</strong></p>
+          <p>Presentazione storico-tossicologica sul caso Crisco come esempio di innovazione alimentare industriale, marketing, grassi trans, ritardo nel riconoscimento del rischio cardiovascolare e revisione di un paradigma nutrizionale.</p>
+          <div class="material-meta">Prof. Domenico Britti · PDF · CC BY-NC-ND 4.0 · Updated August 2026</div>
+        </div>
+        <a href="docs/crisco-case-hydrogenation-trans-fats-nutritional-paradigm-britti-2026.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Apri il PDF</a>
+      </article>
 
-English card inserted/updated in en.html:
+Card inglese inserita in en.html:
 
-<article class="material-card with-preview">
-  <img class="material-preview" src="assets/previews/preview-intertwined-toxic-destinies.png" alt="Preview of the presentation Intertwined Destinies" loading="lazy">
-  <div>
-    <h3>Intertwined Destinies: Historical Toxicology and Environmental Mirrors</h3>
-    <p><strong>Educational-scientific material.</strong></p>
-    <p>An English-language presentation using historical toxicological case files to examine shared human-animal exposure, from the Michigan PBB disaster to TOCP poisoning in Morocco, lead exposure and chemical incidents, with focus on animal sentinels, veterinary clinical databases and environmental surveillance.</p>
-    <div class="material-meta">Prof. Domenico Britti · PDF · CC BY-NC-ND 4.0 · Updated August 2026</div>
-  </div>
-  <a href="docs/intertwined-toxic-destinies-historical-toxicology-environmental-mirrors-britti-2026.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Open PDF</a>
-</article>
+      <article class="material-card with-preview">
+        <img class="material-preview" src="assets/previews/preview-crisco-case-trans-fats.png" alt="Preview of the presentation The Crisco Case" loading="lazy">
+        <div>
+          <h3>The Crisco Case: Hydrogenation, Trans Fats, and the Reversal of a Nutritional Paradigm</h3>
+          <p><strong>Educational-scientific material.</strong></p>
+          <p>An English-language historical toxicology presentation on Crisco as a case study in industrial food innovation, marketing, trans fats, delayed cardiovascular-risk recognition and the reversal of a nutritional paradigm.</p>
+          <div class="material-meta">Prof. Domenico Britti · PDF · CC BY-NC-ND 4.0 · Updated August 2026</div>
+        </div>
+        <a href="docs/crisco-case-hydrogenation-trans-fats-nutritional-paradigm-britti-2026.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Open PDF</a>
+      </article>
 
-Upload instructions:
-1. Unzip this package.
-2. Upload its contents to the repository root.
-3. Allow overwriting of index.html, en.html, and the PDF in docs/.
-4. Keep the folder structure exactly as provided.
