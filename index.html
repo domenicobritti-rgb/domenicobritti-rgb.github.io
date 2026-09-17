@@ -1266,6 +1266,151 @@
       font-weight: 850;
     }
 
+  
+    /* Continuing Professional Development */
+    .cpd-section { scroll-margin-top: 90px; }
+    .cpd-intro {
+      max-width: 900px;
+      color: var(--text);
+      font-size: 1.02rem;
+      margin: 0 0 14px;
+    }
+    .cpd-overview {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 24px;
+      padding: 9px 13px;
+      border: 1px solid #a7f3d0;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-size: .88rem;
+      font-weight: 700;
+    }
+    .cpd-groups {
+      display: grid;
+      gap: 14px;
+    }
+    .cpd-group {
+      background: rgba(255,255,255,.92);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+    .cpd-group > summary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 20px;
+      cursor: pointer;
+      list-style: none;
+      font-weight: 800;
+      color: var(--slate);
+      user-select: none;
+    }
+    .cpd-group > summary::-webkit-details-marker { display: none; }
+    .cpd-group > summary::after {
+      content: "+";
+      margin-left: auto;
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-size: 1.1rem;
+    }
+    .cpd-group[open] > summary::after { content: "–"; }
+    .cpd-summary-icon {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-size: 1.05rem;
+      flex: 0 0 auto;
+    }
+    .cpd-count {
+      display: inline-grid;
+      place-items: center;
+      min-width: 26px;
+      height: 26px;
+      padding: 0 7px;
+      border-radius: 999px;
+      background: #f1f5f9;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 800;
+    }
+    .cpd-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      padding: 0 20px 20px;
+    }
+    .cpd-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 190px;
+      padding: 17px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+    }
+    .cpd-card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .cpd-year {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-size: .78rem;
+      font-weight: 800;
+    }
+    .cpd-provider {
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+    }
+    .cpd-card h4 {
+      margin: 0 0 10px;
+      color: var(--slate);
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .cpd-meta {
+      margin-top: auto;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.45;
+    }
+    .cpd-link {
+      display: inline-flex;
+      margin-top: 12px;
+      color: var(--green-dark);
+      font-size: .86rem;
+      font-weight: 800;
+    }
+    .cpd-link:hover { text-decoration: underline; }
+    @media (max-width: 760px) {
+      .cpd-grid { grid-template-columns: 1fr; padding: 0 14px 14px; }
+      .cpd-group > summary { padding: 15px 14px; }
+      .cpd-overview { border-radius: 14px; }
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -1354,6 +1499,8 @@
       <a class="sub" href="#ricerca">Pesticidi e contaminanti</a>
       <a class="sub" href="#ricerca">Scienza regolatoria</a>
       <a href="#didattica">Didattica</a>
+      <a href="#formazione-continua">Formazione continua</a>
+      <a class="sub" href="#formazione-continua">Attestati e aggiornamento professionale</a>
       <a href="#pubblicazioni">Pubblicazioni</a>
       <a class="sub" href="#pubblicazioni">Primo autore</a>
       <a class="sub" href="#pubblicazioni">Ultimo autore</a>
@@ -1505,6 +1652,297 @@
         </div>
       </div>
     </section>
+
+<section id="formazione-continua" class="section cpd-section">
+  <p class="eyebrow">Formazione continua</p>
+  <h2>Formazione continua e aggiornamento professionale</h2>
+  <p class="cpd-intro">Selezione documentata di attività formative coerenti con gli ambiti di ricerca e di responsabilità professionale: tossicologia, One Health, salute ambientale, farmaco veterinario, sperimentazione animale, benessere animale e controlli ufficiali.</p>
+  <div class="cpd-overview">28 attività formative selezionate · 2018–2026. Gli attestati pubblicati sono copie web; i dati anagrafici non necessari alla verifica del titolo sono stati oscurati.</div>
+  <div class="cpd-groups">
+<details class="cpd-group" open>
+  <summary><span class="cpd-summary-icon" aria-hidden="true">◉</span><span>Tossicologia, ambiente &amp; One Health</span><span class="cpd-count">6</span></summary>
+  <div class="cpd-grid">
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2026</span>
+    <span class="cpd-provider">Istituto Superiore di Sanità (ISS)</span>
+  </div>
+  <h4>L’approccio One Health: principi generali, aspetti ambientali e casi studio – II edizione</h4>
+  <div class="cpd-meta">2026 · Istituto Superiore di Sanità (ISS) · 16 h</div>
+  <a class="cpd-link" href="docs/cpd/one-health-ambiente-iss-2026.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2026</span>
+    <span class="cpd-provider">Istituto Superiore di Sanità (ISS)</span>
+  </div>
+  <h4>Approcci integrati per la valutazione del rischio tossicologico – II edizione</h4>
+  <div class="cpd-meta">2026 · Istituto Superiore di Sanità (ISS) · 16 h</div>
+  <a class="cpd-link" href="docs/cpd/rischio-tossicologico-integrato-iss-2026.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2026</span>
+    <span class="cpd-provider">Istituto Superiore di Sanità (ISS)</span>
+  </div>
+  <h4>L’impatto dei prodotti fitosanitari sull’ambiente e sulla salute umana – II edizione</h4>
+  <div class="cpd-meta">2026 · Istituto Superiore di Sanità (ISS) · 16 h</div>
+  <a class="cpd-link" href="docs/cpd/prodotti-fitosanitari-ambiente-salute-iss-2026.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2026</span>
+    <span class="cpd-provider">Istituto Superiore di Sanità (ISS)</span>
+  </div>
+  <h4>Comunicazione del rischio ambientale – II edizione</h4>
+  <div class="cpd-meta">2026 · Istituto Superiore di Sanità (ISS) · 16 h</div>
+  <a class="cpd-link" href="docs/cpd/comunicazione-rischio-ambientale-iss-2026.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2026</span>
+    <span class="cpd-provider">Istituto Superiore di Sanità (ISS)</span>
+  </div>
+  <h4>Ambiente e salute nei siti contaminati – II edizione</h4>
+  <div class="cpd-meta">2026 · Istituto Superiore di Sanità (ISS) · 16 h</div>
+  <a class="cpd-link" href="docs/cpd/ambiente-salute-siti-contaminati-iss-2026.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Prevenzione e controllo degli artropodi vettori</h4>
+  <div class="cpd-meta">2023 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/artropodi-vettori-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+</div>
+</details>
+<details class="cpd-group">
+  <summary><span class="cpd-summary-icon" aria-hidden="true">⚕</span><span>Farmaco veterinario &amp; farmacosorveglianza</span><span class="cpd-count">3</span></summary>
+  <div class="cpd-grid">
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2026</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Aggiornamento professionale sul controllo ufficiale del medicinale veterinario (farmacosorveglianza)</h4>
+  <div class="cpd-meta">2026 · IZSLER · 15 h</div>
+  <a class="cpd-link" href="docs/cpd/farmacosorveglianza-medicinale-veterinario-izsler-2026.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2024</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Il sistema informativo ClassyFarm e la sua applicazione per il settore relativo ai medicinali veterinari</h4>
+  <div class="cpd-meta">2024 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/classyfarm-medicinali-veterinari-izsler-2024.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2018</span>
+    <span class="cpd-provider">UMG / DGSAF – Ministero della Salute</span>
+  </div>
+  <h4>La Ricetta Veterinaria Elettronica nella Regione Calabria</h4>
+  <div class="cpd-meta">2018 · UMG / DGSAF – Ministero della Salute</div>
+  <a class="cpd-link" href="docs/cpd/ricetta-veterinaria-elettronica-calabria-2018.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+</div>
+</details>
+<details class="cpd-group">
+  <summary><span class="cpd-summary-icon" aria-hidden="true">⚗</span><span>Sperimentazione animale &amp; animali da laboratorio</span><span class="cpd-count">9</span></summary>
+  <div class="cpd-grid">
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2026</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>OPBA: formazione per i compiti – Moduli 25, 50, 51 per tutte le specie</h4>
+  <div class="cpd-meta">2026 · IZSLER · 8 h · 8 CFP · DM 5 agosto 2021</div>
+  <a class="cpd-link" href="docs/cpd/opba-moduli-25-50-51-izsler-2026.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2020</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Il sistema ECM nella formazione del Veterinario designato (D.Lgs. 26/2014)</h4>
+  <div class="cpd-meta">2020 · IZSLER · 7,1 ECM</div>
+  <a class="cpd-link" href="docs/cpd/veterinario-designato-dlgs26-izsler-2020.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2022</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Legislazione nazionale ed etica – Livello 1, moduli 1 e 2 (DM 5 agosto 2021)</h4>
+  <div class="cpd-meta">2022 · IZSLER · 5 CFP</div>
+  <a class="cpd-link" href="docs/cpd/legislazione-etica-dm5agosto2021-izsler-2022.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2022–2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>OPBA: formazione per i compiti, moduli 25, 50, 51</h4>
+  <div class="cpd-meta">2022–2023 · IZSLER · aggiornamento 2023</div>
+  <a class="cpd-link" href="docs/cpd/opba-moduli-25-50-51-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Biologia e gestione degli animali da laboratorio – roditori e lagomorfi, moduli 3.1, 4, 5, 6.1, 7</h4>
+  <div class="cpd-meta">2023 · IZSLER · DM 5 agosto 2021</div>
+  <a class="cpd-link" href="docs/cpd/biologia-gestione-animali-laboratorio-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Etica e concezione dei progetti, moduli 9, 10, 11</h4>
+  <div class="cpd-meta">2023 · IZSLER · 6 CFP</div>
+  <a class="cpd-link" href="docs/cpd/etica-concezione-progetti-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Utilizzo degli ungulati nella ricerca – bovini ed equini, moduli 3.1, 4, 5, 7</h4>
+  <div class="cpd-meta">2023 · IZSLER · DM 5 agosto 2021</div>
+  <a class="cpd-link" href="docs/cpd/ungulati-ricerca-bovini-equini-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Utilizzo degli ungulati nella ricerca – suini, piccoli ruminanti e camelidi, moduli 3.1, 4, 5, 7</h4>
+  <div class="cpd-meta">2023 · IZSLER · DM 5 agosto 2021</div>
+  <a class="cpd-link" href="docs/cpd/ungulati-ricerca-suini-ruminanti-camelidi-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023 / 2026</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Pratiche avanzate di allevamento – Modulo 23</h4>
+  <div class="cpd-meta">2023 / 2026 · IZSLER · aggiornamento 2026 · 6 h · 6 CFP</div>
+  <a class="cpd-link" href="docs/cpd/pratiche-avanzate-allevamento-modulo23-izsler-2026.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+</div>
+</details>
+<details class="cpd-group">
+  <summary><span class="cpd-summary-icon" aria-hidden="true">✓</span><span>Benessere animale, ClassyFarm &amp; controlli ufficiali</span><span class="cpd-count">7</span></summary>
+  <div class="cpd-grid">
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2022–2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>ClassyFarm: check list benessere animale e biosicurezza – capra da latte</h4>
+  <div class="cpd-meta">2022–2023 · IZSLER · aggiornamento specialistico 2023</div>
+  <a class="cpd-link" href="docs/cpd/classyfarm-capra-latte-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Controllo ufficiale negli allevamenti di bovini e bufalini: nuova check list integrata con ClassyFarm</h4>
+  <div class="cpd-meta">2023 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/controllo-ufficiale-bovini-bufalini-classyfarm-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Controllo ufficiale del benessere animale nel vitello e annutolo: nuova check list 2021</h4>
+  <div class="cpd-meta">2023 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/benessere-vitello-annutolo-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>ClassyFarm: check list benessere animale e biosicurezza – bovino da carne</h4>
+  <div class="cpd-meta">2023 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/classyfarm-bovino-carne-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Controllo ufficiale del benessere negli ovini e nei caprini allevati: nuova check list 2022</h4>
+  <div class="cpd-meta">2023 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/benessere-ovini-caprini-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Autocontrollo del benessere animale nelle ovaiole: nuova check list 2022</h4>
+  <div class="cpd-meta">2023 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/benessere-ovaiole-checklist-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Introduzione ai metodi di sorveglianza negli allevamenti</h4>
+  <div class="cpd-meta">2023 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/sorveglianza-allevamenti-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+</div>
+</details>
+<details class="cpd-group">
+  <summary><span class="cpd-summary-icon" aria-hidden="true">◎</span><span>Sanità pubblica veterinaria &amp; sorveglianza</span><span class="cpd-count">2</span></summary>
+  <div class="cpd-grid">
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2022</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>I prodotti della pesca a 360°</h4>
+  <div class="cpd-meta">2022 · IZSLER · 32 ECM</div>
+  <a class="cpd-link" href="docs/cpd/prodotti-pesca-izsler-2022.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2023</span>
+    <span class="cpd-provider">IZSLER</span>
+  </div>
+  <h4>Monitoraggio e sorveglianza delle patologie oncologiche in veterinaria: ruolo del clinico nella raccolta dati</h4>
+  <div class="cpd-meta">2023 · IZSLER</div>
+  <a class="cpd-link" href="docs/cpd/sorveglianza-oncologica-veterinaria-izsler-2023.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+</div>
+</details>
+<details class="cpd-group">
+  <summary><span class="cpd-summary-icon" aria-hidden="true">▦</span><span>Management sanitario</span><span class="cpd-count">1</span></summary>
+  <div class="cpd-grid">
+<article class="cpd-card">
+  <div class="cpd-card-top">
+    <span class="cpd-year">2018–2019</span>
+    <span class="cpd-provider">Università Magna Graecia / Regione Calabria</span>
+  </div>
+  <h4>Corso di perfezionamento in Organizzazione e Direzione delle Aziende Sanitarie</h4>
+  <div class="cpd-meta">2018–2019 · Università Magna Graecia / Regione Calabria</div>
+  <a class="cpd-link" href="docs/cpd/organizzazione-direzione-aziende-sanitarie-umg-2019.pdf" target="_blank" rel="noopener">Apri attestato →</a>
+</article>
+</div>
+</details>
+</div>
+</section>
 
     <section id="pubblicazioni" class="section">
       <p class="eyebrow">Pubblicazioni</p>
