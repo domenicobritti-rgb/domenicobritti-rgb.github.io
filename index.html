@@ -1218,6 +1218,101 @@
     }
 
   
+
+
+    /* Digital public engagement / Google Local Guides */
+    .digital-engagement-card {
+      margin-top: 22px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: linear-gradient(145deg, #ffffff 0%, #fbfaf2 100%);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+    }
+    .digital-engagement-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+    .digital-engagement-kicker {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .digital-engagement-card h3 {
+      margin: 0 0 8px;
+      font-size: 23px;
+      line-height: 1.2;
+    }
+    .digital-engagement-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .local-guide-level {
+      flex: 0 0 auto;
+      min-width: 108px;
+      padding: 13px 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--soft);
+      text-align: center;
+    }
+    .local-guide-level strong {
+      display: block;
+      color: var(--text);
+      font-size: 28px;
+      line-height: 1;
+    }
+    .local-guide-level span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .local-guide-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0 16px;
+    }
+    .local-guide-stat {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .local-guide-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+      font-size: 25px;
+      line-height: 1.05;
+    }
+    .local-guide-stat span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .digital-engagement-note {
+      margin-top: 12px !important;
+      font-size: 13px;
+    }
+    @media (max-width: 680px) {
+      .digital-engagement-head { flex-direction: column; }
+      .local-guide-level { min-width: 0; width: 100%; }
+      .local-guide-stats { grid-template-columns: 1fr; }
+    }
+
     /* Header/side-index refinement after adding Third Mission */
     @media (min-width: 1280px) {
       .site-header .nav {
@@ -2244,10 +2339,25 @@
 
     <section id="terza-missione" class="section">
       <p class="eyebrow">Terza missione</p>
-      <h2>Terza missione, territorio e biodiversità animale</h2>
-      <p>Partecipazione a iniziative scientifiche, istituzionali e territoriali dedicate alla valorizzazione delle razze autoctone, alla biodiversità animale, alla zootecnia sostenibile, alla transumanza e al ruolo degli animali come patrimonio biologico, culturale e ambientale.</p>
+      <h2>Terza missione, public engagement e territorio</h2>
+      <p>Partecipazione a iniziative scientifiche, istituzionali e territoriali dedicate a One Health, salute ambientale, biodiversità animale, zootecnia sostenibile, trasferimento delle conoscenze e partecipazione civica digitale.</p>
 
       <div class="event-list">
+
+        <article class="event-card">
+          <img class="event-preview" src="assets/events/vebs-pizzo-2026-britti-preview.png" alt="Intervento del Prof. Domenico Britti alla Giornata di studio VeBS L'ambiente come cura" loading="lazy">
+          <div class="event-card-body">
+            <span class="event-meta">Pizzo Calabro (VV) · 21–22 ottobre 2026 · Progetto VeBS / ARPA Calabria</span>
+            <h3>L’ambiente come cura: animali sentinella, pesticidi e traiettorie One Health</h3>
+            <p><strong>Intervento:</strong> Dall’ambiente che espone all’ambiente che cura. Animali sentinella, pesticidi e traiettorie One Health.</p>
+            <p>Dal canarino in miniera alla “sentinella marocchina” del TOCP, dal cane da slitta artico al cane domestico esposto a contaminanti indoor e antiparassitari: un unico filo narrativo, l’animale come segnale precoce di esposizioni condivise e come strumento di prevenzione in sanità pubblica One Health.</p>
+          </div>
+          <div class="event-actions">
+            <a class="btn btn-secondary" href="docs/events/arpacal-vebs-pizzo-britti-2026-sintesi.pdf" target="_blank" rel="noopener">Sintesi dell’intervento</a>
+            <a class="btn btn-secondary" href="https://www.arpacal.it/notizie/lambiente-come-cura-arpa-calabria-promuove-un-evento-a-pizzo" target="_blank" rel="noopener">Evento ARPACAL</a>
+          </div>
+        </article>
+
         <article class="event-card">
           <img class="event-preview" src="assets/events/transumanza-calabria-13-luglio-2026.jpg" alt="Locandina del convegno La Transumanza" loading="lazy">
           <div class="event-card-body">
@@ -2274,6 +2384,28 @@
           </div>
         </article>
       </div>
+
+      <article class="digital-engagement-card" aria-labelledby="local-guides-title">
+        <div class="digital-engagement-head">
+          <div>
+            <span class="digital-engagement-kicker">Public engagement digitale</span>
+            <h3 id="local-guides-title">Google Local Guides: documentare e condividere il territorio</h3>
+            <p>Attività continuativa di documentazione digitale di luoghi, servizi e realtà territoriali attraverso contributi, immagini e informazioni geolocalizzate rese disponibili alla comunità.</p>
+          </div>
+          <div class="local-guide-level" aria-label="Google Local Guide livello 9">
+            <strong>9</strong>
+            <span>Local Guide</span>
+          </div>
+        </div>
+        <div class="local-guide-stats" aria-label="Indicatori del profilo Google Local Guides">
+          <div class="local-guide-stat"><strong>9,8K</strong><span>contributi</span></div>
+          <div class="local-guide-stat"><strong>54K</strong><span>punti</span></div>
+          <div class="local-guide-stat"><strong>44 milioni</strong><span>visualizzazioni</span></div>
+        </div>
+        <p>Una forma di partecipazione civica digitale che affianca le attività scientifiche e territoriali di terza missione, contribuendo alla conoscenza condivisa dei luoghi e dei servizi.</p>
+        <p class="digital-engagement-note">Indicatori del profilo rilevati nell’ottobre 2026.</p>
+      </article>
+
     </section>
 
     <section id="progetti" class="section">
