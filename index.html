@@ -1506,6 +1506,24 @@
       .cpd-overview { border-radius: 14px; }
     }
 
+
+
+    /* Ultra-short fix: prevent the desktop side index from overlapping page content */
+    @media (min-width: 1480px) {
+      .nav,
+      .hero-inner,
+      .section,
+      .contact,
+      .footer-inner {
+        max-width: calc(var(--max) + 300px);
+        padding-left: 300px;
+      }
+
+      .side-index {
+        width: 220px;
+      }
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -2055,6 +2073,28 @@
       <div class="publication-group">
         <h3 class="publication-group-title">Primo autore</h3>
         <div class="publication-list">
+          <article class="publication">
+            <div class="iconbox" aria-hidden="true">▣</div>
+            <div>
+              <div class="publication-title">
+                <a href="https://doi.org/10.1007/s10661-026-16026-1" target="_blank" rel="noopener">
+                  Domestic and wild animals as sentinels for environmental monitoring of emerging contaminants: a One Health framework for biomonitoring and human exposure assessment
+                </a>
+                <span class="new-badge" data-new-until="2026-11-27">NEW</span>
+              </div>
+              <div class="publication-meta">
+                Britti D.
+                <em>Environmental Monitoring and Assessment</em>, 2026, 198, 1258.
+                DOI: <a href="https://doi.org/10.1007/s10661-026-16026-1" target="_blank" rel="noopener">10.1007/s10661-026-16026-1</a>.
+                Pubblicato online il 27 ottobre 2026 · Springer Nature · Review.
+              </div>
+              <div class="publication-meta">
+                Il lavoro propone un framework operativo One Health che integra animali da compagnia, animali da reddito e fauna selvatica come sentinelle dei contaminanti emergenti, collegando il segnale animale alla verifica ambientale e al biomonitoraggio umano mirato.
+                <strong>Accesso al testo:</strong> <a href="https://rdcu.be/zLLkg5J6ZWxa" target="_blank" rel="noopener">SharedIt Springer Nature (sola lettura)</a>.
+              </div>
+              <span class="publication-role">Domenico Britti: autore unico</span>
+            </div>
+          </article>
           <article class="publication">
             <div class="iconbox" aria-hidden="true">▣</div>
             <div>
