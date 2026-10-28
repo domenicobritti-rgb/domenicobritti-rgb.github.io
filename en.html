@@ -1524,6 +1524,132 @@
       }
     }
 
+
+    /* Collapsible side index */
+    @media (min-width: 1480px) {
+      .nav,
+      .hero-inner,
+      .section,
+      .contact,
+      .footer-inner {
+        max-width: var(--max);
+        padding-left: 24px;
+      }
+    }
+
+    .side-index {
+      display: block !important;
+      position: fixed;
+      left: 14px;
+      top: 104px;
+      width: min(280px, calc(100vw - 72px));
+      max-height: calc(100vh - 128px);
+      overflow: auto;
+      padding: 18px 16px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 14px 40px rgba(15,23,42,.14);
+      z-index: 35;
+      transform: translateX(calc(-100% - 28px));
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .25s ease, opacity .2s ease;
+    }
+
+    .side-index.is-open {
+      transform: translateX(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .side-index-toggle {
+      position: fixed;
+      left: 14px;
+      top: 104px;
+      z-index: 36;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 11px 10px 14px;
+      border: 1px solid rgba(5,150,105,.28);
+      border-radius: 999px;
+      background: rgba(255,255,255,.96);
+      color: var(--brand);
+      box-shadow: 0 8px 24px rgba(15,23,42,.12);
+      backdrop-filter: blur(12px);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .02em;
+      cursor: pointer;
+      transition: left .25s ease, transform .18s ease, background .18s ease;
+    }
+
+    .side-index-toggle:hover,
+    .side-index-toggle:focus-visible {
+      background: #ecfdf5;
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .side-index-toggle .index-arrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      font-size: 20px;
+      line-height: 1;
+      transition: transform .25s ease;
+    }
+
+    body.index-open .side-index-toggle {
+      left: min(310px, calc(100vw - 54px));
+    }
+
+    body.index-open .side-index-toggle .index-arrow {
+      transform: rotate(180deg);
+    }
+
+    .side-index-title {
+      padding-right: 8px;
+    }
+
+    @media (max-width: 860px) {
+      .side-index,
+      .side-index-toggle {
+        top: 82px;
+      }
+
+      .side-index {
+        left: 10px;
+        width: min(286px, calc(100vw - 64px));
+        max-height: calc(100vh - 100px);
+      }
+
+      .side-index-toggle {
+        left: 10px;
+        padding: 9px 10px 9px 12px;
+      }
+
+      body.index-open .side-index-toggle {
+        left: min(306px, calc(100vw - 52px));
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .side-index,
+      .side-index-toggle,
+      .side-index-toggle .index-arrow {
+        transition: none;
+      }
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -1602,7 +1728,11 @@
     <a class="license-chip" href="license.html" title="Creative Commons license">© CC BY-NC-ND 4.0</a>
       </nav>
   </header>
-  <aside class="side-index" aria-label="Site index">
+    <button class="side-index-toggle" type="button" aria-controls="side-index-panel" aria-expanded="false" aria-label="Open page index">
+    <span class="index-toggle-label">Index</span>
+    <span class="index-arrow" aria-hidden="true">›</span>
+  </button>
+<aside id="side-index-panel" class="side-index" aria-label="Site index">
     <p class="side-index-title">Index</p>
     <nav>
       <a href="#profilo">Profile</a>
@@ -2522,6 +2652,37 @@
         }
       });
     });
+  </script>
+
+
+  <script>
+    (function () {
+      var panel = document.querySelector('.side-index');
+      var toggle = document.querySelector('.side-index-toggle');
+      if (!panel || !toggle) return;
+
+      function setOpen(open) {
+        panel.classList.toggle('is-open', open);
+        document.body.classList.toggle('index-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.querySelector('.index-toggle-label').textContent = open ? 'Close' : 'Index';
+        toggle.setAttribute('aria-label', open ? 'Close page index' : 'Open page index');
+      }
+
+      toggle.addEventListener('click', function () {
+        setOpen(!panel.classList.contains('is-open'));
+      });
+
+      panel.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () { setOpen(false); });
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') setOpen(false);
+      });
+
+      setOpen(false);
+    })();
   </script>
 
 </body>
