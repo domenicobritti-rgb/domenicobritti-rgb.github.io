@@ -164,6 +164,17 @@
       color: var(--ink);
     }
 
+    /* Hero typography: more compact on desktop and narrow screens */
+    .hero h1 { font-size: clamp(36px, 4.7vw, 56px); line-height: 1.08; letter-spacing: -0.045em; }
+    .hero .hero-text { font-size: clamp(17px, 1.55vw, 20px); line-height: 1.55; }
+    .hero-visual strong { font-size: clamp(19px, 1.8vw, 23px); }
+    .hero-visual p { font-size: 16px; line-height: 1.55; }
+    @media (max-width: 520px) {
+      .hero h1 { font-size: clamp(34px, 8vw, 42px); }
+      .hero .hero-text { font-size: 17px; }
+      .hero-visual { padding: 24px; }
+    }
+
     .hero-text {
       margin-top: 22px;
       font-size: clamp(20px, 2vw, 26px);
@@ -1767,7 +1778,7 @@
 <p class="pill"><span aria-hidden="true">🌿</span> Life Sciences · One Health · Veterinary Medicine</p>
           <h1>Prof. Domenico Britti</h1>
           <p class="hero-text">
-            Professore ordinario di Farmacologia e tossicologia veterinaria presso l’Università “Magna Graecia” di Catanzaro. La mia attività scientifica studia le relazioni tra salute animale, salute umana e ambiente, con particolare attenzione agli effetti biologici di pesticidi e contaminanti emergenti (EDCs).
+            Professore ordinario di Farmacologia e Tossicologia veterinaria presso l’Università “Magna Graecia” di Catanzaro. Mi occupo di tossicologia ambientale, pesticidi, contaminanti emergenti e valutazione del rischio in una prospettiva One Health.
           </p>
           <div class="actions">
             <a href="#ricerca" class="btn btn-primary">Esplora il mio lavoro <span aria-hidden="true">→</span></a>
@@ -1780,9 +1791,9 @@
           <div class="hero-visual photo-card">
             <div>
               <img src="foto-profilo.jpg" onerror="this.onerror=null;this.src='assets/img/db-logo-life-sciences-one-health-veterinary-medicine.png';" alt="Ritratto del Prof. Domenico Britti" class="profile-photo">
-              <strong>Farmaco veterinario, ambiente e One Health</strong>
+              <strong>Dai dati alle evidenze</strong>
               <p>
-                Una prospettiva scientifica integrata sui rapporti tra medicinali veterinari, salute animale, ambiente, sicurezza alimentare e sanità pubblica.
+                Integrare segnali ambientali e biologici per riconoscere precocemente i rischi e orientare la prevenzione.
               </p>
             </div>
           </div>
