@@ -1661,7 +1661,24 @@
       }
     }
 
-  </style>
+  
+    /* Warm editorial palette and direct section navigation */
+    :root { --bg:#f5f0e6; --white:#fffdf8; --ink:#18384a; --text:#354b53; --muted:#657478; --line:#d9dfd4; --green:#246a58; --green-dark:#174d40; --green-soft:#e6ebdd; --slate:#244a64; }
+    body { background:linear-gradient(180deg,#f5f0e6 0%,#f0f1e8 52%,#f5f0e6 100%); }
+    .site-header { background:rgba(250,247,239,.94); }
+    .hero-card,.event-card,.material-card,.publication,.btn-secondary { background-color:#fffdf8; }
+    .hero-visual,.hero-visual.photo-card { background:linear-gradient(135deg,#e6ebdd 0%,#f5f0e6 65%,#fffdf8 100%); }
+    .section:nth-of-type(even) { background:rgba(230,235,221,.25); border-radius:24px; }
+    .quick-nav { max-width:1120px; margin:0 auto 12px; padding:24px; }
+    .quick-nav-inner { background:#e6ebdd; border:1px solid #cbd7c9; border-radius:24px; padding:24px; }
+    .quick-nav h2 { margin:0 0 4px; color:#244a64; font-size:clamp(23px,2.5vw,30px); }
+    .quick-nav p { margin:0 0 18px; color:#354b53; }
+    .quick-nav-links { display:flex; flex-wrap:wrap; gap:10px; }
+    .quick-nav-links a { display:inline-flex; padding:10px 15px; border-radius:999px; background:#fffdf8; color:#174d40; border:1px solid #c4d4c9; font-size:14px; font-weight:700; }
+    .quick-nav-links a:hover,.quick-nav-links a:focus-visible { background:#246a58; color:#fff; outline-offset:3px; }
+    section[id] { scroll-margin-top:90px; }
+    @media(max-width:520px) { .quick-nav { padding:12px; } .quick-nav-inner { padding:18px; } .quick-nav-links { gap:8px; } .quick-nav-links a { font-size:13px; padding:9px 12px; } }
+</style>
 
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="keywords" content="Domenico Britti, Prof. Domenico Britti, Life Sciences, Tossicologia Veterinaria, Farmacologia Veterinaria, One Health, Tossicologia Ambientale, Salute Ambientale, Contaminanti Emergenti, Interferenti Endocrini, EDCs, Pesticidi, PFAS, Fipronil carry-over, Contaminazione dei mangimi, Micotossine, Antimicrobico-resistenza, AMR, Sicurezza alimentare, Biomarcatori ambientali, Animali sentinella, Medicina Veterinaria, Università Magna Graecia">
@@ -1801,6 +1818,7 @@
       </div>
     </section>
 
+    <div class="quick-nav" aria-label="Esplora il sito"><div class="quick-nav-inner"><h2>Esplora il sito</h2><p>Accedi direttamente alle aree di interesse, senza scorrere tutta la pagina.</p><nav class="quick-nav-links" aria-label="Esplora il sito"><a href="#profilo">Profilo</a><a href="#ricerca">Ricerca</a><a href="#pubblicazioni">Pubblicazioni</a><a href="#didattica">Didattica</a><a href="#formazione-continua">Formazione</a><a href="#articoli">Articoli</a><a href="#materiali">Materiali</a><a href="#terza-missione">Terza missione</a><a href="#progetti">Progetti</a><a href="#contatti">Contatti</a></nav></div></div>
     <section id="profilo" class="section">
       <p class="eyebrow">Profilo</p>
       <h2>Una traiettoria scientifica tra veterinaria, tossicologia e sanità integrata</h2>
