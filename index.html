@@ -164,6 +164,17 @@
       color: var(--ink);
     }
 
+    /* Hero typography: more compact on desktop and narrow screens */
+    .hero h1 { font-size: clamp(36px, 4.7vw, 56px); line-height: 1.08; letter-spacing: -0.045em; }
+    .hero .hero-text { font-size: clamp(17px, 1.55vw, 20px); line-height: 1.55; }
+    .hero-visual strong { font-size: clamp(19px, 1.8vw, 23px); }
+    .hero-visual p { font-size: 16px; line-height: 1.55; }
+    @media (max-width: 520px) {
+      .hero h1 { font-size: clamp(34px, 8vw, 42px); }
+      .hero .hero-text { font-size: 17px; }
+      .hero-visual { padding: 24px; }
+    }
+
     .hero-text {
       margin-top: 22px;
       font-size: clamp(20px, 2vw, 26px);
@@ -1650,7 +1661,24 @@
       }
     }
 
-  </style>
+  
+    /* Warm editorial palette and direct section navigation */
+    :root { --bg:#f5f0e6; --white:#fffdf8; --ink:#18384a; --text:#354b53; --muted:#657478; --line:#d9dfd4; --green:#246a58; --green-dark:#174d40; --green-soft:#e6ebdd; --slate:#244a64; }
+    body { background:linear-gradient(180deg,#f5f0e6 0%,#f0f1e8 52%,#f5f0e6 100%); }
+    .site-header { background:rgba(250,247,239,.94); }
+    .hero-card,.event-card,.material-card,.publication,.btn-secondary { background-color:#fffdf8; }
+    .hero-visual,.hero-visual.photo-card { background:linear-gradient(135deg,#e6ebdd 0%,#f5f0e6 65%,#fffdf8 100%); }
+    .section:nth-of-type(even) { background:rgba(230,235,221,.25); border-radius:24px; }
+    .quick-nav { max-width:1120px; margin:0 auto 12px; padding:24px; }
+    .quick-nav-inner { background:#e6ebdd; border:1px solid #cbd7c9; border-radius:24px; padding:24px; }
+    .quick-nav h2 { margin:0 0 4px; color:#244a64; font-size:clamp(23px,2.5vw,30px); }
+    .quick-nav p { margin:0 0 18px; color:#354b53; }
+    .quick-nav-links { display:flex; flex-wrap:wrap; gap:10px; }
+    .quick-nav-links a { display:inline-flex; padding:10px 15px; border-radius:999px; background:#fffdf8; color:#174d40; border:1px solid #c4d4c9; font-size:14px; font-weight:700; }
+    .quick-nav-links a:hover,.quick-nav-links a:focus-visible { background:#246a58; color:#fff; outline-offset:3px; }
+    section[id] { scroll-margin-top:90px; }
+    @media(max-width:520px) { .quick-nav { padding:12px; } .quick-nav-inner { padding:18px; } .quick-nav-links { gap:8px; } .quick-nav-links a { font-size:13px; padding:9px 12px; } }
+</style>
 
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="keywords" content="Domenico Britti, Prof. Domenico Britti, Life Sciences, Tossicologia Veterinaria, Farmacologia Veterinaria, One Health, Tossicologia Ambientale, Salute Ambientale, Contaminanti Emergenti, Interferenti Endocrini, EDCs, Pesticidi, PFAS, Fipronil carry-over, Contaminazione dei mangimi, Micotossine, Antimicrobico-resistenza, AMR, Sicurezza alimentare, Biomarcatori ambientali, Animali sentinella, Medicina Veterinaria, Università Magna Graecia">
@@ -1767,7 +1795,7 @@
 <p class="pill"><span aria-hidden="true">🌿</span> Life Sciences · One Health · Veterinary Medicine</p>
           <h1>Prof. Domenico Britti</h1>
           <p class="hero-text">
-            Professore ordinario di Farmacologia e tossicologia veterinaria presso l’Università “Magna Graecia” di Catanzaro. La mia attività scientifica studia le relazioni tra salute animale, salute umana e ambiente, con particolare attenzione agli effetti biologici di pesticidi e contaminanti emergenti (EDCs).
+            Professore ordinario di Farmacologia e Tossicologia veterinaria presso l’Università “Magna Graecia” di Catanzaro. Mi occupo di tossicologia ambientale, pesticidi, contaminanti emergenti e valutazione del rischio in una prospettiva One Health.
           </p>
           <div class="actions">
             <a href="#ricerca" class="btn btn-primary">Esplora il mio lavoro <span aria-hidden="true">→</span></a>
@@ -1780,9 +1808,9 @@
           <div class="hero-visual photo-card">
             <div>
               <img src="foto-profilo.jpg" onerror="this.onerror=null;this.src='assets/img/db-logo-life-sciences-one-health-veterinary-medicine.png';" alt="Ritratto del Prof. Domenico Britti" class="profile-photo">
-              <strong>Farmaco veterinario, ambiente e One Health</strong>
+              <strong>Dai dati alle evidenze</strong>
               <p>
-                Una prospettiva scientifica integrata sui rapporti tra medicinali veterinari, salute animale, ambiente, sicurezza alimentare e sanità pubblica.
+                Integrare segnali ambientali e biologici per riconoscere precocemente i rischi e orientare la prevenzione.
               </p>
             </div>
           </div>
@@ -1790,6 +1818,7 @@
       </div>
     </section>
 
+    <div class="quick-nav" aria-label="Esplora il sito"><div class="quick-nav-inner"><h2>Esplora il sito</h2><p>Accedi direttamente alle aree di interesse, senza scorrere tutta la pagina.</p><nav class="quick-nav-links" aria-label="Esplora il sito"><a href="#profilo">Profilo</a><a href="#ricerca">Ricerca</a><a href="#pubblicazioni">Pubblicazioni</a><a href="#didattica">Didattica</a><a href="#formazione-continua">Formazione</a><a href="#articoli">Articoli</a><a href="#materiali">Materiali</a><a href="#terza-missione">Terza missione</a><a href="#progetti">Progetti</a><a href="#contatti">Contatti</a></nav></div></div>
     <section id="profilo" class="section">
       <p class="eyebrow">Profilo</p>
       <h2>Una traiettoria scientifica tra veterinaria, tossicologia e sanità integrata</h2>
@@ -2203,6 +2232,7 @@
       <div class="publication-group">
         <h3 class="publication-group-title">Primo autore</h3>
         <div class="publication-list">
+
           <article class="publication">
             <div class="iconbox" aria-hidden="true">▣</div>
             <div>
@@ -2255,7 +2285,7 @@
                 <em>Environmental Toxicology and Pharmacology</em>, 2026, 123, 104974.
                 DOI: <a href="https://doi.org/10.1016/j.etap.2026.104974" target="_blank" rel="noopener">10.1016/j.etap.2026.104974</a>.
               </div>
-              <span class="publication-role">Domenico Britti: primo autore</span>
+              <span class="publication-role">Domenico Britti: autore unico</span>
             </div>
           </article>
           <article class="publication">
@@ -2296,6 +2326,27 @@
       <div class="publication-group">
         <h3 class="publication-group-title">Ultimo autore</h3>
         <div class="publication-list">
+          <article class="publication">
+            <div class="iconbox" aria-hidden="true">▣</div>
+            <div>
+              <div class="publication-title">
+                <a href="https://doi.org/10.1002/clen.70298" target="_blank" rel="noopener">
+                  Fipronil in the feed-to-food chain: occurrence, transfer metrics, and risk implications
+                </a>
+                <span class="new-badge" data-new-until="2026-12-03">NEW</span>
+              </div>
+              <div class="publication-meta">
+                <em>CLEAN – Soil, Air, Water</em> (Wiley), 2026.
+                DOI: <a href="https://doi.org/10.1002/clen.70298" target="_blank" rel="noopener">10.1002/clen.70298</a>.
+                Articolo scientifico · Accesso tramite abbonamento (non Open Access).
+              </div>
+              <div class="publication-meta">
+                Una sintesi delle evidenze sul trasferimento del fipronil dai mangimi agli alimenti di origine animale, con attenzione ai fattori di trasferimento, alla distribuzione dei residui e alle implicazioni per la sicurezza alimentare in prospettiva One Health.
+                <strong>Testo integrale:</strong> disponibile tramite Wiley secondo le condizioni di accesso dell'editore.
+              </div>
+              <span class="publication-role">Domenico Britti: ultimo autore</span>
+            </div>
+          </article>
           <article class="publication">
             <div class="iconbox" aria-hidden="true">▣</div>
             <div>
@@ -2513,7 +2564,6 @@
       <p>Partecipazione a iniziative scientifiche, istituzionali e territoriali dedicate a One Health, salute ambientale, biodiversità animale, zootecnia sostenibile, trasferimento delle conoscenze e partecipazione civica digitale.</p>
 
       <div class="event-list">
-
         <article class="event-card">
           <img class="event-preview" src="assets/events/valorbio-5-novembre-2026-preview.png" alt="Locandina del Convegno Nazionale VALORBIO - Dalla biomassa al prodotto" loading="lazy">
           <div class="event-card-body">
@@ -2525,6 +2575,19 @@
           <div class="event-actions">
             <a class="btn btn-secondary" href="docs/events/oli-essenziali-medicina-veterinaria-britti-valorbio-2026.pdf" target="_blank" rel="noopener">Apri la presentazione</a>
             <a class="btn btn-secondary" href="docs/events/valorbio-5-novembre-2026-locandina.pdf" target="_blank" rel="noopener">Apri la locandina</a>
+          </div>
+        </article>
+
+
+        <article class="event-card">
+          <img class="event-preview" src="assets/events/WhatsApp%20Image%202026-10-03%20at%2014.55.53.jpeg" alt="Locandina dell'incontro Sorveglianza e monitoraggio ambientale e salute pubblica, Ministero della Salute, 28 ottobre 2026" loading="lazy" style="object-fit:contain;object-position:center;background:#f7fbff;height:340px;">
+          
+          <div class="event-card-body">
+            <span class="event-meta">Roma · Ministero della Salute · 28 ottobre 2026</span>
+            <h3>Dalla sorveglianza alla prevenzione: una direzione comune per le competenze One Health</h3>
+            <p><strong>Intervento scientifico:</strong> integrazione dei segnali ambientali, degli animali sentinella e delle competenze veterinarie, tossicologiche ed epidemiologiche nella sorveglianza multidominio.</p>
+            <p>La proposta valorizza una catena operativa condivisa — rilevare, verificare, interpretare e decidere — per trasformare i dati in interventi tempestivi e proporzionati. Presentazione tenuta nell'ambito dell'incontro «Sorveglianza e monitoraggio ambientale e salute pubblica».</p>
+            <p><a class="btn btn-secondary" href="docs/events/Ministero_Britti_presentato.pdf" target="_blank" rel="noopener">Apri la presentazione PDF (IT)</a></p>
           </div>
         </article>
 
