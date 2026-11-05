@@ -1650,7 +1650,24 @@
       }
     }
 
-  </style>
+  
+    /* Warm editorial palette and direct section navigation */
+    :root { --bg:#f5f0e6; --white:#fffdf8; --ink:#18384a; --text:#354b53; --muted:#657478; --line:#d9dfd4; --green:#246a58; --green-dark:#174d40; --green-soft:#e6ebdd; --slate:#244a64; }
+    body { background:linear-gradient(180deg,#f5f0e6 0%,#f0f1e8 52%,#f5f0e6 100%); }
+    .site-header { background:rgba(250,247,239,.94); }
+    .hero-card,.event-card,.material-card,.publication,.btn-secondary { background-color:#fffdf8; }
+    .hero-visual,.hero-visual.photo-card { background:linear-gradient(135deg,#e6ebdd 0%,#f5f0e6 65%,#fffdf8 100%); }
+    .section:nth-of-type(even) { background:rgba(230,235,221,.25); border-radius:24px; }
+    .quick-nav { max-width:1120px; margin:0 auto 12px; padding:24px; }
+    .quick-nav-inner { background:#e6ebdd; border:1px solid #cbd7c9; border-radius:24px; padding:24px; }
+    .quick-nav h2 { margin:0 0 4px; color:#244a64; font-size:clamp(23px,2.5vw,30px); }
+    .quick-nav p { margin:0 0 18px; color:#354b53; }
+    .quick-nav-links { display:flex; flex-wrap:wrap; gap:10px; }
+    .quick-nav-links a { display:inline-flex; padding:10px 15px; border-radius:999px; background:#fffdf8; color:#174d40; border:1px solid #c4d4c9; font-size:14px; font-weight:700; }
+    .quick-nav-links a:hover,.quick-nav-links a:focus-visible { background:#246a58; color:#fff; outline-offset:3px; }
+    section[id] { scroll-margin-top:90px; }
+    @media(max-width:520px) { .quick-nav { padding:12px; } .quick-nav-inner { padding:18px; } .quick-nav-links { gap:8px; } .quick-nav-links a { font-size:13px; padding:9px 12px; } }
+</style>
 
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="keywords" content="Domenico Britti, Prof. Domenico Britti, Life Sciences, Veterinary Toxicology, Veterinary Pharmacology, One Health, Environmental Toxicology, Environmental Health, Emerging Contaminants, Endocrine Disrupting Chemicals, EDCs, Pesticides, PFAS, Fipronil carry-over, Animal Feed Contamination, Mycotoxins, Antimicrobial Resistance, AMR, Food Safety, Environmental Biomarkers, Sentinel Animals, Veterinary Medicine, University Magna Graecia, Università Magna Graecia">
@@ -1789,6 +1806,7 @@
       </div>
     </section>
 
+    <div class="quick-nav" aria-label="Explore the website"><div class="quick-nav-inner"><h2>Explore the website</h2><p>Go directly to the area you need without scrolling through the entire page.</p><nav class="quick-nav-links" aria-label="Explore the website"><a href="#profilo">Profile</a><a href="#ricerca">Research</a><a href="#pubblicazioni">Publications</a><a href="#didattica">Teaching</a><a href="#formazione-continua">Training</a><a href="#articoli">Articles</a><a href="#materiali">Materials</a><a href="#public-engagement">Public engagement</a><a href="#progetti">Projects</a><a href="#contatti">Contact</a></nav></div></div>
     <section id="profilo" class="section">
       <p class="eyebrow">Profile</p>
       <h2>A scientific trajectory across veterinary medicine, toxicology and integrated health</h2>
@@ -2512,7 +2530,6 @@
       <p>Participation in scientific, institutional and territorial initiatives focused on One Health, environmental health, animal biodiversity, sustainable livestock systems, knowledge transfer and digital civic participation.</p>
 
       <div class="event-list">
-
         <article class="event-card">
           <img class="event-preview" src="assets/events/valorbio-5-novembre-2026-preview.png" alt="Poster of the National Conference VALORBIO - From Biomass to Product" loading="lazy">
           <div class="event-card-body">
@@ -2524,6 +2541,19 @@
           <div class="event-actions">
             <a class="btn btn-secondary" href="docs/events/oli-essenziali-medicina-veterinaria-britti-valorbio-2026.pdf" target="_blank" rel="noopener">Open presentation</a>
             <a class="btn btn-secondary" href="docs/events/valorbio-5-novembre-2026-locandina.pdf" target="_blank" rel="noopener">Open poster</a>
+          </div>
+        </article>
+
+
+        <article class="event-card">
+          <img class="event-preview" src="assets/events/WhatsApp%20Image%202026-10-03%20at%2014.55.53.jpeg" alt="Official event poster, Environmental Surveillance, Monitoring and Public Health, Italian Ministry of Health, 28 October 2026" loading="lazy" style="object-fit:contain;object-position:center;background:#f7fbff;height:340px;">
+          
+          <div class="event-card-body">
+            <span class="event-meta">Rome · Italian Ministry of Health · 28 October 2026</span>
+            <h3>From surveillance to prevention: aligning One Health expertise</h3>
+            <p><strong>Scientific contribution:</strong> integrating environmental signals, animal sentinels and veterinary, toxicological and epidemiological expertise into multidomain surveillance.</p>
+            <p>The proposed operational pathway — detect, verify, interpret and decide — aims to turn fragmented data into timely, proportionate action. Presented during the meeting on environmental surveillance, monitoring and public health.</p>
+            <p><a class="btn btn-secondary" href="docs/events/Ministry_of_Health_Britti_2026_EN.pdf" target="_blank" rel="noopener">Open presentation PDF (EN)</a></p>
           </div>
         </article>
 
