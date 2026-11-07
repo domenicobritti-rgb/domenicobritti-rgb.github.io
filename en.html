@@ -1667,7 +1667,186 @@
     .quick-nav-links a:hover,.quick-nav-links a:focus-visible { background:#246a58; color:#fff; outline-offset:3px; }
     section[id] { scroll-margin-top:90px; }
     @media(max-width:520px) { .quick-nav { padding:12px; } .quick-nav-inner { padding:18px; } .quick-nav-links { gap:8px; } .quick-nav-links a { font-size:13px; padding:9px 12px; } }
-</style>
+
+    /* 2026-11-07 definitive hero + highlights layout */
+    .hero-inner{
+      max-width:1280px !important;
+      margin:0 auto !important;
+      padding:72px 32px 64px !important;
+      display:grid !important;
+      grid-template-columns:minmax(0,1.55fr) minmax(300px,.65fr) !important;
+      gap:52px !important;
+      align-items:center !important;
+    }
+    .hero-inner > div:first-child{min-width:0}
+    .hero h1{
+      margin:0 !important;
+      white-space:nowrap !important;
+      font-size:clamp(46px,5vw,70px) !important;
+      line-height:1 !important;
+      letter-spacing:-.055em !important;
+    }
+    .hero-text-block{
+      margin-top:24px !important;
+      max-width:760px !important;
+      color:#334155 !important;
+    }
+    .hero-text-block p{
+      margin:0 !important;
+      font-size:clamp(17px,1.45vw,20px) !important;
+      line-height:1.5 !important;
+    }
+    .hero-text-block p+p{margin-top:12px !important}
+    .hero-text-block strong{color:var(--ink);font-weight:800}
+    .hero-focus-tags{
+      display:flex !important;
+      flex-wrap:wrap !important;
+      gap:8px !important;
+      margin:20px 0 0 !important;
+    }
+    .hero-focus-tags span{
+      display:inline-flex !important;
+      align-items:center !important;
+      padding:7px 11px !important;
+      border:1px solid #c4d4c9 !important;
+      border-radius:999px !important;
+      background:#fffdf8 !important;
+      color:#174d40 !important;
+      font-size:12px !important;
+      line-height:1.15 !important;
+      font-weight:800 !important;
+    }
+    .hero-card{
+      max-width:360px !important;
+      width:100% !important;
+      justify-self:end !important;
+      padding:22px !important;
+    }
+    .hero-visual,
+    .hero-visual.photo-card{
+      min-height:0 !important;
+      padding:22px !important;
+      display:block !important;
+    }
+    .profile-photo{
+      width:min(260px,100%) !important;
+      height:auto !important;
+      aspect-ratio:1/1 !important;
+      margin:0 auto !important;
+      border-radius:24px !important;
+    }
+    .hero-card-summary{display:none !important}
+
+    .highlights-wrap{
+      max-width:1280px !important;
+      margin:0 auto !important;
+      padding:28px 32px 38px !important;
+    }
+    .highlights-head{
+      display:flex !important;
+      align-items:end !important;
+      justify-content:space-between !important;
+      gap:28px !important;
+      margin-bottom:20px !important;
+    }
+    .highlights-head h2{
+      margin:0 !important;
+      font-size:clamp(30px,3vw,40px) !important;
+      line-height:1.08 !important;
+    }
+    .highlights-head > p{
+      max-width:620px !important;
+      margin:0 !important;
+      color:var(--text) !important;
+      font-size:15px !important;
+      line-height:1.5 !important;
+    }
+    .highlights-grid{
+      display:grid !important;
+      grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+      gap:18px !important;
+    }
+    .highlight-card{
+      position:relative !important;
+      overflow:hidden !important;
+      display:flex !important;
+      flex-direction:column !important;
+      min-height:275px !important;
+      padding:24px !important;
+      border:1px solid var(--line) !important;
+      border-radius:24px !important;
+      background:#fffdf8 !important;
+      box-shadow:var(--shadow-sm) !important;
+    }
+    .highlight-card::before{
+      content:"" !important;
+      position:absolute !important;
+      top:0 !important;
+      left:0 !important;
+      right:0 !important;
+      height:5px !important;
+      background:#246a58 !important;
+    }
+    .highlight-card.clean::before{background:#244a64 !important}
+    .highlight-card.event::before{background:#b56f61 !important}
+    .highlight-kicker{
+      display:inline-flex !important;
+      width:fit-content !important;
+      margin:0 0 14px !important;
+      padding:5px 9px !important;
+      border-radius:999px !important;
+      background:#eef5ed !important;
+      color:#174d40 !important;
+      font-size:11px !important;
+      font-weight:900 !important;
+      letter-spacing:.08em !important;
+      text-transform:uppercase !important;
+    }
+    .highlight-card.clean .highlight-kicker{background:#eef2f6 !important;color:#244a64 !important}
+    .highlight-card.event .highlight-kicker{background:#f6e9e5 !important;color:#8b4f45 !important}
+    .highlight-card h3{
+      margin:0 0 12px !important;
+      font-size:19px !important;
+      line-height:1.3 !important;
+    }
+    .highlight-card p{
+      margin:0 !important;
+      color:var(--text) !important;
+      font-size:14px !important;
+      line-height:1.55 !important;
+    }
+    .highlight-meta{
+      margin-top:auto !important;
+      padding-top:18px !important;
+      color:var(--muted) !important;
+      font-size:12px !important;
+      line-height:1.4 !important;
+      font-weight:700 !important;
+    }
+
+    @media(max-width:980px){
+      .hero-inner{
+        grid-template-columns:1fr !important;
+        padding:58px 24px 52px !important;
+      }
+      .hero h1{
+        white-space:normal !important;
+        font-size:clamp(42px,8vw,62px) !important;
+      }
+      .hero-card{
+        justify-self:start !important;
+        max-width:330px !important;
+      }
+      .highlights-grid{grid-template-columns:1fr !important}
+      .highlights-head{display:block !important}
+      .highlights-head>p{margin-top:8px !important}
+    }
+    @media(max-width:520px){
+      .hero-inner,.highlights-wrap{padding-left:16px !important;padding-right:16px !important}
+      .hero h1{font-size:clamp(38px,12vw,50px) !important}
+    }
+
+  </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="keywords" content="Domenico Britti, Prof. Domenico Britti, Life Sciences, Veterinary Toxicology, Veterinary Pharmacology, One Health, Environmental Toxicology, Environmental Health, Emerging Contaminants, Endocrine Disrupting Chemicals, EDCs, Pesticides, PFAS, Fipronil carry-over, Animal Feed Contamination, Mycotoxins, Antimicrobial Resistance, AMR, Food Safety, Environmental Biomarkers, Sentinel Animals, Veterinary Medicine, University Magna Graecia, Università Magna Graecia">
@@ -1800,7 +1979,6 @@
           <div class="hero-visual photo-card">
             <div>
               <img src="foto-profilo.jpg" onerror="this.onerror=null;this.src='assets/img/db-logo-life-sciences-one-health-veterinary-medicine.png';" alt="Portrait of Prof. Domenico Britti" class="profile-photo">
-              <p class="hero-card-summary">Integrating veterinary, environmental and toxicological evidence to identify risks early and support prevention.</p>
             </div>
           </div>
         </aside>
