@@ -1846,6 +1846,38 @@
       .hero h1{font-size:clamp(38px,12vw,50px) !important}
     }
 
+  
+    /* Upcoming scientific event */
+    .event-card.upcoming-event{
+      grid-column:1 / -1;
+      grid-template-rows:1fr auto;
+      position:relative;
+      border-color:#b7d6c8;
+      background:linear-gradient(135deg,#fffdf8 0%,#f0f6f2 100%);
+    }
+    .event-card.upcoming-event::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;
+      height:5px;
+      background:#246a58;
+    }
+    .event-card.upcoming-event .event-card-body{padding-top:28px}
+    .event-card.upcoming-event h3{font-size:24px}
+    .upcoming-label{
+      display:inline-flex;
+      width:fit-content;
+      margin-bottom:10px;
+      padding:5px 9px;
+      border-radius:999px;
+      background:#e6ebdd;
+      color:#174d40;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -2008,10 +2040,10 @@
           <div class="highlight-meta">CLEAN – Soil, Air, Water · Wiley · 2026 · last author</div>
         </article>
         <article class="highlight-card event">
-          <span class="highlight-kicker">Public engagement</span>
-          <h3><a href="#public-engagement">VALORBIO – From Biomass to Product</a></h3>
-          <p>Essential oils in veterinary medicine: efficacy, safety and pharmacological innovation. Key message: natural does not mean safe.</p>
-          <div class="highlight-meta">UMG, Catanzaro · 5 November 2026 · Faculty</div>
+          <span class="highlight-kicker">Upcoming event</span>
+          <h3><a href="#public-engagement">From dispersed signals to One Health early warning</a></h3>
+          <p>Sentinel animals, environment and data integration for emerging threats: from signal integration to measurable decision advantage.</p>
+          <div class="highlight-meta">Regional Citadel, Catanzaro · 23 November 2026 · 11:45</div>
         </article>
       </div>
     </section>
@@ -2763,6 +2795,20 @@
       <p>Participation in scientific, institutional and territorial initiatives focused on One Health, environmental health, animal biodiversity, sustainable livestock systems, knowledge transfer and digital civic participation.</p>
 
       <div class="event-list">
+
+        <article class="event-card upcoming-event">
+          <div class="event-card-body">
+            <span class="upcoming-label">Upcoming event</span>
+            <span class="event-meta">“Jole Santelli” Regional Citadel, Green Hall, Catanzaro · 23 November 2026 · 11:45</span>
+            <h3>From dispersed signals to One Health early warning</h3>
+            <p><strong>Talk:</strong> sentinel animals, environment and data integration for emerging threats.</p>
+            <p>Within the ECM conference on climate change, arboviruses and antimicrobial resistance, the contribution moves from separate surveillance streams toward an operational One Health decision system: integrate signals before the decision, measure timeliness and reliability, and translate them into early warning and prevention.</p>
+          </div>
+          <div class="event-actions">
+            <a class="btn btn-secondary" href="https://formazione.izsmportici.it/eventi/487" target="_blank" rel="noopener">Official programme and event information</a>
+          </div>
+        </article>
+
         <article class="event-card">
           <img class="event-preview" src="assets/events/valorbio-5-novembre-2026-preview.png" alt="Poster of the National Conference VALORBIO - From Biomass to Product" loading="lazy">
           <div class="event-card-body">
