@@ -1857,6 +1857,38 @@
       .hero h1{font-size:clamp(38px,12vw,50px) !important}
     }
 
+  
+    /* Upcoming scientific event */
+    .event-card.upcoming-event{
+      grid-column:1 / -1;
+      grid-template-rows:1fr auto;
+      position:relative;
+      border-color:#b7d6c8;
+      background:linear-gradient(135deg,#fffdf8 0%,#f0f6f2 100%);
+    }
+    .event-card.upcoming-event::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;
+      height:5px;
+      background:#246a58;
+    }
+    .event-card.upcoming-event .event-card-body{padding-top:28px}
+    .event-card.upcoming-event h3{font-size:24px}
+    .upcoming-label{
+      display:inline-flex;
+      width:fit-content;
+      margin-bottom:10px;
+      padding:5px 9px;
+      border-radius:999px;
+      background:#e6ebdd;
+      color:#174d40;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -2020,10 +2052,10 @@
           <div class="highlight-meta">CLEAN – Soil, Air, Water · Wiley · 2026 · ultimo autore</div>
         </article>
         <article class="highlight-card event">
-          <span class="highlight-kicker">Public engagement</span>
-          <h3><a href="#terza-missione">VALORBIO – Dalla biomassa al prodotto</a></h3>
-          <p>Oli essenziali in medicina veterinaria: efficacia, sicurezza e innovazione farmacologica. Messaggio chiave: naturale non significa sicuro.</p>
-          <div class="highlight-meta">UMG, Catanzaro · 5 novembre 2026 · Faculty</div>
+          <span class="highlight-kicker">Prossimo evento</span>
+          <h3><a href="#terza-missione">Dai segnali dispersi all’allerta One Health</a></h3>
+          <p>Animali sentinella, ambiente e integrazione dei dati per le minacce emergenti: dall’integrazione dei segnali a un vantaggio decisionale misurabile.</p>
+          <div class="highlight-meta">Cittadella Regionale, Catanzaro · 23 novembre 2026 · ore 11:45</div>
         </article>
       </div>
     </section>
@@ -2774,6 +2806,20 @@
       <p>Partecipazione a iniziative scientifiche, istituzionali e territoriali dedicate a One Health, salute ambientale, biodiversità animale, zootecnia sostenibile, trasferimento delle conoscenze e partecipazione civica digitale.</p>
 
       <div class="event-list">
+
+        <article class="event-card upcoming-event">
+          <div class="event-card-body">
+            <span class="upcoming-label">Prossimo evento</span>
+            <span class="event-meta">Cittadella Regionale “Jole Santelli”, Sala Verde, Catanzaro · 23 novembre 2026 · ore 11:45</span>
+            <h3>Dai segnali dispersi all’allerta One Health</h3>
+            <p><strong>Intervento:</strong> animali sentinella, ambiente e integrazione dei dati per le minacce emergenti.</p>
+            <p>Nel convegno ECM <em>Cambiamenti climatici, arbovirosi ed antibiotico resistenza: minacce emergenti e sfide prioritarie per la salute pubblica</em>, il contributo propone un passaggio operativo dai flussi informativi separati a un sistema decisionale One Health: integrare i segnali prima della decisione, misurarne tempestività e affidabilità e tradurli in allerta e prevenzione.</p>
+          </div>
+          <div class="event-actions">
+            <a class="btn btn-secondary" href="https://formazione.izsmportici.it/eventi/487" target="_blank" rel="noopener">Programma e informazioni ufficiali</a>
+          </div>
+        </article>
+
         <article class="event-card">
           <img class="event-preview" src="assets/events/valorbio-5-novembre-2026-preview.png" alt="Locandina del Convegno Nazionale VALORBIO - Dalla biomassa al prodotto" loading="lazy">
           <div class="event-card-body">
