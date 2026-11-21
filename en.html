@@ -1878,6 +1878,51 @@
       text-transform:uppercase;
     }
 
+  
+    /* Contact section refinement */
+    .contact-identity{
+      margin:24px auto 0;
+      max-width:760px;
+      padding:18px 20px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:rgba(248,250,252,.72);
+      color:var(--text);
+      line-height:1.55;
+    }
+    .contact-identity strong{
+      display:block;
+      margin-bottom:3px;
+      color:var(--ink);
+      font-size:18px;
+    }
+    .contact-groups{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+      margin-top:28px;
+      text-align:left;
+    }
+    .contact-group{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fffdf8;
+    }
+    .contact-group h3{
+      margin:0 0 12px;
+      font-size:16px;
+      color:var(--ink);
+    }
+    .contact-group .profile-links{
+      justify-content:flex-start;
+      margin-top:0;
+      gap:9px;
+    }
+    @media(max-width:760px){
+      .contact-groups{grid-template-columns:1fr}
+    }
+
   </style>
 
   <link rel="icon" type="image/png" href="favicon.png">
@@ -2936,20 +2981,38 @@
         <p class="eyebrow">Contact</p>
         <h2>For collaborations, seminars and scientific projects</h2>
         <p class="main">
-          For scientific collaborations, seminars, interdisciplinary projects and initiatives in veterinary pharmacology, environmental toxicology and One Health.
+          For scientific collaborations, seminars and interdisciplinary projects in veterinary pharmacology and toxicology, One Health, environmental health and risk assessment.
         </p>
+
+        <div class="contact-identity">
+          <strong>Prof. Domenico Britti</strong>
+          Department of Experimental and Clinical Medicine · Magna Graecia University of Catanzaro<br>
+          <a href="mailto:britti@unicz.it">britti@unicz.it</a>
+        </div>
+
         <div class="actions" style="justify-content:center;">
           <a href="mailto:britti@unicz.it" class="btn btn-primary">✉ Email me</a>
           <a href="https://dmsc.unicz.it/personale/docente/domenicobritti" class="btn btn-secondary" target="_blank" rel="noopener">University profile</a>
         </div>
 
-        <div class="profile-links" aria-label="Profili scientifici e professionali">
-          <a class="profile-link" href="https://orcid.org/0000-0001-7355-8791" target="_blank" rel="noopener">ORCID</a>
-          <a class="profile-link" href="https://scholar.google.com/citations?user=sctxi98AAAAJ&hl=it" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="profile-link" href="https://www.sciencedirect.com/author/6701857657/britti-domenico" target="_blank" rel="noopener">Scopus / ScienceDirect</a>
-          <a class="profile-link" href="https://www.researchgate.net/profile/Domenico-Britti" target="_blank" rel="noopener">ResearchGate</a>
-          <a class="profile-link" href="https://www.linkedin.com/in/domenico-britti-717a25218/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="profile-link" href="https://github.com/domenicobritti-rgb" target="_blank" rel="noopener">GitHub</a>
+        <div class="contact-groups">
+          <div class="contact-group">
+            <h3>Scientific profiles</h3>
+            <div class="profile-links" aria-label="Scientific profiles">
+              <a class="profile-link" href="https://orcid.org/0000-0001-7355-8791" target="_blank" rel="noopener">ORCID</a>
+              <a class="profile-link" href="https://scholar.google.com/citations?user=sctxi98AAAAJ&hl=it" target="_blank" rel="noopener">Google Scholar</a>
+              <a class="profile-link" href="https://www.sciencedirect.com/author/6701857657/britti-domenico" target="_blank" rel="noopener">ScienceDirect Author</a>
+              <a class="profile-link" href="https://www.researchgate.net/profile/Domenico-Britti" target="_blank" rel="noopener">ResearchGate</a>
+            </div>
+          </div>
+
+          <div class="contact-group">
+            <h3>Professional network and open science</h3>
+            <div class="profile-links" aria-label="Professional network and open science">
+              <a class="profile-link" href="https://github.com/domenicobritti-rgb" target="_blank" rel="noopener">GitHub</a>
+              <a class="profile-link" href="https://www.linkedin.com/in/domenico-britti-717a25218/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
